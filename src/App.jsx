@@ -1,9 +1,10 @@
 import React from 'react'
+import Article from './components/articles/Articles'
 
 function App() {
   return (
     <div className="App">
-      <p>Hola</p>
+      <Article />
     </div>
   )
 }
