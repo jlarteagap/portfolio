@@ -362,7 +362,56 @@ function App() {
             </div>
           </div>
         </section>
-        <section className="home section" id="work"></section>
+        <section className="home section" id="work">
+          <span className="section__subtitle">My Portfolio</span>
+          <h2 className="section__title">Recent Works</h2>
+
+          <div className="work__filters">
+            <span className="work__item active-work" data-filter="all">
+              All
+            </span>
+            <span className="work__item" data-filter="web">
+              Web
+            </span>
+            <span className="work__item" data-filter="movil">
+              Movil
+            </span>
+            <span className="work__item" data-filter="desing">
+              Design
+            </span>
+          </div>
+
+          <div className="work__container container grid">
+            <div className="work__card mix web">
+              <img src="" alt="Demo" className="work__img" />
+              <h3 className="work__title">Web Desing</h3>
+              <a href="#" className="work__button">
+                Demo <BiRightArrowAlt className="work__icon" />
+              </a>
+            </div>
+            <div className="work__card mix desing">
+              <img src="" alt="Demo" className="work__img" />
+              <h3 className="work__title">App movil</h3>
+              <a href="#" className="work__button">
+                Demo <BiRightArrowAlt className="work__icon" />
+              </a>
+            </div>
+            <div className="work__card mix web">
+              <img src="" alt="Demo" className="work__img" />
+              <h3 className="work__title">Web Desing</h3>
+              <a href="#" className="work__button">
+                Demo <BiRightArrowAlt className="work__icon" />
+              </a>
+            </div>
+            <div className="work__card mix movil">
+              <img src="" alt="Demo" className="work__img" />
+              <h3 className="work__title">App Movil</h3>
+              <a href="#" className="work__button">
+                Demo <BiRightArrowAlt className="work__icon" />
+              </a>
+            </div>
+          </div>
+        </section>
       </main>
       <footer className="footer"></footer>
       <Article />
