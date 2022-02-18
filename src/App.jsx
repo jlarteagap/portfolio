@@ -12,7 +12,9 @@ import {
   BiBriefcaseAlt,
   BiSupport,
   BiBadgeCheck,
-  BiRightArrowAlt
+  BiRightArrowAlt,
+  BiX,
+  BiCheck
 } from 'react-icons/bi'
 import { BsLinkedin, BsGithub, BsTwitter } from 'react-icons/bs'
 function App() {
@@ -252,6 +254,35 @@ function App() {
               <span className="services__button">
                 See more <BiRightArrowAlt className="services__icon" />
               </span>
+              <div className="services__modal">
+                <div className="services__modal-content">
+                  <BiX />
+                  <h3 className="services__modal-title">
+                    Product <br />
+                    Designer
+                  </h3>
+                  <p className="services__modal-description">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Perspiciatis in nesciunt commodi adipisci debitis porro. Vel
+                    odio eius similique. Iusto delectus at pariatur, quas neque
+                    molestias doloremque corrupti quis nemo?
+                  </p>
+                  <ul className="services__modal-list">
+                    <li className="services__modal-item">
+                      <BiCheck />
+                      <p className="services__modal-info">Web Develop</p>
+                    </li>
+                    <li className="services__modal-item">
+                      <BiCheck />
+                      <p className="services__modal-info">Web Develop</p>
+                    </li>
+                    <li className="services__modal-item">
+                      <BiCheck />
+                      <p className="services__modal-info">Web Develop</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
             <div className="services__card">
               <h3 className="services__title">
@@ -261,6 +292,35 @@ function App() {
               <span className="services__button">
                 See more <BiRightArrowAlt className="services__icon" />
               </span>
+              <div className="services__modal">
+                <div className="services__modal-content">
+                  <BiX />
+                  <h3 className="services__modal-title">
+                    Product <br />
+                    Designer
+                  </h3>
+                  <p className="services__modal-description">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Perspiciatis in nesciunt commodi adipisci debitis porro. Vel
+                    odio eius similique. Iusto delectus at pariatur, quas neque
+                    molestias doloremque corrupti quis nemo?
+                  </p>
+                  <ul className="services__modal-list">
+                    <li className="services__modal-item">
+                      <BiCheck />
+                      <p className="services__modal-info">Web Develop</p>
+                    </li>
+                    <li className="services__modal-item">
+                      <BiCheck />
+                      <p className="services__modal-info">Web Develop</p>
+                    </li>
+                    <li className="services__modal-item">
+                      <BiCheck />
+                      <p className="services__modal-info">Web Develop</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
             <div className="services__card">
               <h3 className="services__title">
@@ -270,6 +330,35 @@ function App() {
               <span className="services__button">
                 See more <BiRightArrowAlt className="services__icon" />
               </span>
+              <div className="services__modal">
+                <div className="services__modal-content">
+                  <BiX className="services__modal-close" />
+                  <h3 className="services__modal-title">
+                    Product <br />
+                    Designer
+                  </h3>
+                  <p className="services__modal-description">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Perspiciatis in nesciunt commodi adipisci debitis porro. Vel
+                    odio eius similique. Iusto delectus at pariatur, quas neque
+                    molestias doloremque corrupti quis nemo?
+                  </p>
+                  <ul className="services__modal-list">
+                    <li className="services__modal-item">
+                      <BiCheck />
+                      <p className="services__modal-info">Web Develop</p>
+                    </li>
+                    <li className="services__modal-item">
+                      <BiCheck />
+                      <p className="services__modal-info">Web Develop</p>
+                    </li>
+                    <li className="services__modal-item">
+                      <BiCheck />
+                      <p className="services__modal-info">Web Develop</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </section>
