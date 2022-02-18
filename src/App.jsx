@@ -1,5 +1,10 @@
 import React from 'react'
-import Article from './components/articles/Articles'
+import work1 from '../assets/img/work1.png'
+import work2 from '../assets/img/work2.png'
+import work3 from '../assets/img/work3.png'
+import work4 from '../assets/img/work4.png'
+import aboutMe from '../assets/img/perfil.png'
+import test from '../assets/img/test.png'
 import {
   BiHomeAlt,
   BiUser,
@@ -55,7 +60,7 @@ function App() {
               </li>
             </ul>
           </div>
-          <BiMoon />
+          <BiMoon className="change-theme" id="theme-button" />
         </nav>
       </div>
       <main className="main">
@@ -75,7 +80,7 @@ function App() {
               </a>
             </div>
             <div className="home__handle">
-              <img src="" alt="Perfil" className="home__img" />
+              <img src={test} alt="Perfil" className="home__img" />
             </div>
             <div className="home__social">
               <a href="" className="home__social-link">
@@ -99,7 +104,7 @@ function App() {
           <h2 className="section__title">About Me</h2>
 
           <div className="about__container container grid">
-            <img src="" alt="About me" className="about__img" />
+            <img src={aboutMe} alt="About me" className="about__img" />
             <div className="about__data">
               <div className="about__info">
                 <div className="about__box">
@@ -384,28 +389,28 @@ function App() {
 
           <div className="work__container container grid">
             <div className="work__card mix web">
-              <img src="" alt="Demo" className="work__img" />
+              <img src={work1} alt="Demo" className="work__img" />
               <h3 className="work__title">Web Desing</h3>
               <a href="#" className="work__button">
                 Demo <BiRightArrowAlt className="work__icon" />
               </a>
             </div>
             <div className="work__card mix desing">
-              <img src="" alt="Demo" className="work__img" />
+              <img src={work2} alt="Demo" className="work__img" />
               <h3 className="work__title">App movil</h3>
               <a href="#" className="work__button">
                 Demo <BiRightArrowAlt className="work__icon" />
               </a>
             </div>
             <div className="work__card mix web">
-              <img src="" alt="Demo" className="work__img" />
+              <img src={work3} alt="Demo" className="work__img" />
               <h3 className="work__title">Web Desing</h3>
               <a href="#" className="work__button">
                 Demo <BiRightArrowAlt className="work__icon" />
               </a>
             </div>
             <div className="work__card mix movil">
-              <img src="" alt="Demo" className="work__img" />
+              <img src={work4} alt="Demo" className="work__img" />
               <h3 className="work__title">App Movil</h3>
               <a href="#" className="work__button">
                 Demo <BiRightArrowAlt className="work__icon" />
@@ -556,7 +561,6 @@ function App() {
           </span>
         </div>
       </footer>
-      <Article />
     </div>
   )
 }
