@@ -429,10 +429,11 @@ function App() {
                   <a
                     href="mailto:jorgelarteagap@gmail.com"
                     target="_blank"
-                    className="contact__button-icon"
+                    className="contact__button"
                     rel="noreferrer"
                   >
-                    Write me <BiRightArrowAlt />
+                    Write me{' '}
+                    <BiRightArrowAlt className="contact__button-icon" />
                   </a>
                 </div>
                 <div className="contact__card">
@@ -442,10 +443,11 @@ function App() {
                   <a
                     href="https://wa.me/59177633551"
                     target="_blank"
-                    className="contact__button-icon"
+                    className="contact__button"
                     rel="noreferrer"
                   >
-                    Write me <BiRightArrowAlt />
+                    Write me{' '}
+                    <BiRightArrowAlt className="contact__button-icon" />
                   </a>
                 </div>
                 <div className="contact__card">
@@ -455,21 +457,105 @@ function App() {
                   <a
                     href="http://twitter.com/jlarteagap"
                     target="_blank"
-                    className="contact__button-icon"
+                    className="contact__button"
                     rel="noreferrer"
                   >
-                    Write me <BiRightArrowAlt />
+                    Write me{' '}
+                    <BiRightArrowAlt className="contact__button-icon" />
                   </a>
                 </div>
               </div>
             </div>
             <div className="contact__content">
               <h3 className="contact__title">Write me your project</h3>
+
+              <form action="" className="contact__form">
+                <div className="contact__form-div">
+                  <label htmlFor="" className="contact__form-tag">
+                    Names
+                  </label>
+                  <input
+                    type="text"
+                    className="contact__form-input"
+                    placeholder="Insert your names"
+                  />
+                </div>
+                <div className="contact__form-div">
+                  <label htmlFor="" className="contact__form-tag">
+                    Mail
+                  </label>
+                  <input
+                    type="email"
+                    placeholder="Insert your email"
+                    className="contact__form-input"
+                  />
+                </div>
+                <div className="contact__form-div contact__form-area">
+                  <label htmlFor="" className="contact__form-tag">
+                    Project
+                  </label>
+                  <textarea
+                    name=""
+                    className="contact__form-input"
+                    id=""
+                    cols="30"
+                    rows="10"
+                    placeholder="Write your project"
+                  ></textarea>
+                </div>
+                <button className="button">Send Message</button>
+              </form>
             </div>
           </div>
         </section>
       </main>
-      <footer className="footer"></footer>
+      <footer className="footer">
+        <div className="footer__container container">
+          <h1 className="footer__title">Jorge Arteaga</h1>
+          <ul className="footer__list">
+            <li>
+              <a href="#about" className="footer__link">
+                About
+              </a>
+              <a href="#work" className="footer__link">
+                Projects
+              </a>
+              <a href="#blog" className="footer__link">
+                Blog
+              </a>
+            </li>
+          </ul>
+          <ul className="footer__social">
+            <a
+              href="https://www.linkedin.com/in/jorge-luis-arteaga-perez/"
+              target="_blank"
+              className="footer__social-link"
+              rel="noreferrer"
+            >
+              <BsLinkedin />
+            </a>
+            <a
+              href="https://github.com/jlarteagap"
+              target="_blank"
+              className="footer__social-link"
+              rel="noreferrer"
+            >
+              <BsGithub />
+            </a>
+            <a
+              href="https://twitter.com/jlarteagap"
+              target="_blank"
+              rel="noreferrer"
+              className="footer__social-link"
+            >
+              <BsTwitter />
+            </a>
+          </ul>
+          <span className="footer__copy">
+            &#169; Jorge Arteaga - All rigths reserved
+          </span>
+        </div>
+      </footer>
       <Article />
     </div>
   )
