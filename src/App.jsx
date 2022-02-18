@@ -14,9 +14,10 @@ import {
   BiBadgeCheck,
   BiRightArrowAlt,
   BiX,
-  BiCheck
+  BiCheck,
+  BiMailSend
 } from 'react-icons/bi'
-import { BsLinkedin, BsGithub, BsTwitter } from 'react-icons/bs'
+import { BsLinkedin, BsGithub, BsTwitter, BsWhatsapp } from 'react-icons/bs'
 function App() {
   return (
     <div className="App">
@@ -93,7 +94,7 @@ function App() {
             </a>
           </div>
         </section>
-        <section className="home section" id="about">
+        <section className="about section" id="about">
           <span className="section__subtitle">My intro</span>
           <h2 className="section__title">About Me</h2>
 
@@ -133,7 +134,7 @@ function App() {
           </div>
         </section>
 
-        <section className="home section" id="skills">
+        <section className="skills section" id="skills">
           <span className="section__subtitle">My abilities</span>
           <h2 className="section__title">My Experience</h2>
 
@@ -242,7 +243,7 @@ function App() {
             </div>
           </div>
         </section>
-        <section className="home section" id="services">
+        <section className="services section" id="services">
           <span className="section__subtitle">My Services</span>
           <h2 className="section__title">What I Offer</h2>
 
@@ -362,7 +363,7 @@ function App() {
             </div>
           </div>
         </section>
-        <section className="home section" id="work">
+        <section className="work section" id="work">
           <span className="section__subtitle">My Portfolio</span>
           <h2 className="section__title">Recent Works</h2>
 
@@ -409,6 +410,61 @@ function App() {
               <a href="#" className="work__button">
                 Demo <BiRightArrowAlt className="work__icon" />
               </a>
+            </div>
+          </div>
+        </section>
+        <section className="contact section" id="contact">
+          <span className="section__subtitle">Get in touch</span>
+          <h2 className="section__title">Contact me</h2>
+          <div className="contact__container container grid">
+            <div className="contact__content">
+              <h3 className="contact__title">Talk to me</h3>
+              <div className="contact__info">
+                <div className="contact__card">
+                  <BiMailSend className="contact__card-icon" />
+                  <h3 className="contact__card-title">Email</h3>
+                  <span className="contact__card-data">
+                    jorgelarteagap@gmail.com
+                  </span>
+                  <a
+                    href="mailto:jorgelarteagap@gmail.com"
+                    target="_blank"
+                    className="contact__button-icon"
+                    rel="noreferrer"
+                  >
+                    Write me <BiRightArrowAlt />
+                  </a>
+                </div>
+                <div className="contact__card">
+                  <BsWhatsapp className="contact__card-icon" />
+                  <h3 className="contact__card-title">WhatsApp</h3>
+                  <span className="contact__card-data">+591 77633551</span>
+                  <a
+                    href="https://wa.me/59177633551"
+                    target="_blank"
+                    className="contact__button-icon"
+                    rel="noreferrer"
+                  >
+                    Write me <BiRightArrowAlt />
+                  </a>
+                </div>
+                <div className="contact__card">
+                  <BsTwitter className="contact__card-icon" />
+                  <h3 className="contact__card-title">Twitter</h3>
+                  <span className="contact__card-data">jlarteagap</span>
+                  <a
+                    href="http://twitter.com/jlarteagap"
+                    target="_blank"
+                    className="contact__button-icon"
+                    rel="noreferrer"
+                  >
+                    Write me <BiRightArrowAlt />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="contact__content">
+              <h3 className="contact__title">Write me your project</h3>
             </div>
           </div>
         </section>
