@@ -4,15 +4,8 @@ import work2 from '../assets/img/work2.png'
 import work3 from '../assets/img/work3.png'
 import work4 from '../assets/img/work4.png'
 import aboutMe from '../assets/img/perfil.png'
-import test from '../assets/img/test.png'
+
 import {
-  BiHomeAlt,
-  BiUser,
-  BiBook,
-  BiBriefcase,
-  BiMessageSquare,
-  BiMoon,
-  BiMouse,
   BiAward,
   BiBriefcaseAlt,
   BiSupport,
@@ -23,82 +16,14 @@ import {
   BiMailSend
 } from 'react-icons/bi'
 import { BsLinkedin, BsGithub, BsTwitter, BsWhatsapp } from 'react-icons/bs'
+import Header from './components/header/Header'
+import Home from './components/home/Home'
 function App() {
   return (
     <div className="App">
-      <div className="header" id="header">
-        <nav className="nav container">
-          <a href="#" className="nav__logo">
-            Jorge Arteaga
-          </a>
-          <div className="nav__menu">
-            <ul className="nav__list">
-              <li className="nav__item">
-                <a href="#" className="nav__link active-link">
-                  <BiHomeAlt />
-                </a>
-              </li>
-              <li className="nav__item">
-                <a href="#" className="nav__link">
-                  <BiUser />
-                </a>
-              </li>
-              <li className="nav__item">
-                <a href="#" className="nav__link">
-                  <BiBook />
-                </a>
-              </li>
-              <li className="nav__item">
-                <a href="#" className="nav__link">
-                  <BiBriefcase />
-                </a>
-              </li>
-              <li className="nav__item">
-                <a href="#" className="nav__link">
-                  <BiMessageSquare />
-                </a>
-              </li>
-            </ul>
-          </div>
-          <BiMoon className="change-theme" id="theme-button" />
-        </nav>
-      </div>
+      <Header />
       <main className="main">
-        <section className="home section" id="home">
-          <div className="home__container container grid">
-            <div className="home_data">
-              <span className="home__greeting">Hello, I&#39;m</span>
-              <h1 className="home__name">Jorge Arteaga</h1>
-              <h3 className="home__education">Frontend Developer</h3>
-            </div>
-            <div className="home__buttons">
-              <a download="" href="#" className="button button--ghost">
-                Download CV
-              </a>
-              <a href="#about" className="button">
-                About me
-              </a>
-            </div>
-            <div className="home__handle">
-              <img src={test} alt="Perfil" className="home__img" />
-            </div>
-            <div className="home__social">
-              <a href="" className="home__social-link">
-                <BsLinkedin />
-              </a>
-              <a href="" className="home__social-link">
-                <BsGithub />
-              </a>
-              <a href="" className="home__social-link">
-                <BsTwitter />
-              </a>
-            </div>
-            <a href="#about" className="home__scroll">
-              <BiMouse className="home__scroll-icon" />
-              <span className="home__scroll-name">Scroll Down</span>
-            </a>
-          </div>
-        </section>
+        <Home />
         <section className="about section" id="about">
           <span className="section__subtitle">My intro</span>
           <h2 className="section__title">About Me</h2>

@@ -235,6 +235,7 @@ body.light-theme{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: var(--first-color);
 }
 .nav__logo:hover{
   color: var(--first-color-alt);
@@ -249,7 +250,6 @@ body.light-theme{
   backdrop-filter: blur(10px);
   transition: .4s; /* for light mode animation */
 }
-
 
 .nav__list{
   display: flex;
@@ -272,7 +272,7 @@ body.light-theme{
 
 /* Change background header */
 .scroll-header{
-  box-shadow: 0 4px 4px hsla(0, 0%, 4%, .3);
+  box-shadow: 0 2px 1px hsla(var(--first-hue),90%, 50%, .3);
 }
 
 /*=============== HOME ===============*/
