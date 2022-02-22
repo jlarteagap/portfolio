@@ -1,8 +1,33 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { BiRightArrowAlt, BiMailSend } from 'react-icons/bi'
 import { BsTwitter, BsWhatsapp } from 'react-icons/bs'
+// import APIKEY from '../../config/ApiKey'
+import emailjs from '@emailjs/browser'
 
 const Contact = () => {
+  const form = useRef()
+
+  const sendEmail = e => {
+    e.preventDefault()
+
+    emailjs
+      .sendForm(
+        'service_98zraxi',
+        'template_a34y8wi',
+        form.current,
+        'user_0WvNAjKetmDQc67xcne1A'
+      )
+      .then(
+        result => {
+          alert('!Mensaje enviado correctamente')
+          console.log(result.text)
+        },
+        error => {
+          alert(`!Error al enviar el mensaje - ${error}`)
+          console.log(error.text)
+        }
+      )
+  }
   return (
     <section className="contact section" id="contact">
       <span className="section__subtitle">Get in touch</span>
@@ -57,33 +82,29 @@ const Contact = () => {
         <div className="contact__content">
           <h3 className="contact__title">Write me your project</h3>
 
-          <form action="" className="contact__form">
+          <form ref={form} className="contact__form" onSubmit={sendEmail}>
             <div className="contact__form-div">
-              <label htmlFor="" className="contact__form-tag">
-                Names
-              </label>
+              <label className="contact__form-tag">Names</label>
               <input
                 type="text"
+                name="from_name"
                 className="contact__form-input"
                 placeholder="Insert your names"
               />
             </div>
             <div className="contact__form-div">
-              <label htmlFor="" className="contact__form-tag">
-                Mail
-              </label>
+              <label className="contact__form-tag">Mail</label>
               <input
                 type="email"
+                name="reply_to"
                 placeholder="Insert your email"
                 className="contact__form-input"
               />
             </div>
             <div className="contact__form-div contact__form-area">
-              <label htmlFor="" className="contact__form-tag">
-                Project
-              </label>
+              <label className="contact__form-tag">Project</label>
               <textarea
-                name=""
+                name="message"
                 className="contact__form-input"
                 id=""
                 cols="30"
@@ -91,7 +112,9 @@ const Contact = () => {
                 placeholder="Write your project"
               ></textarea>
             </div>
-            <button className="button">Send Message</button>
+            <button className="button" type="submit">
+              Send Message
+            </button>
           </form>
         </div>
       </div>

@@ -592,7 +592,9 @@ text-align: center;
   font-weight: var(--font-medium);
   margin-bottom: .25rem;
 }
-
+.work__description{
+  font-size: var(--tiny-font-size)
+}
 .work__button{
   width: max-content;
   color: var(--first-color);

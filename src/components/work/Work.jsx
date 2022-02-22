@@ -18,40 +18,66 @@ const Work = () => {
         <span className="work__item" data-filter="web">
           Web
         </span>
-        <span className="work__item" data-filter="movil">
-          Movil
-        </span>
-        <span className="work__item" data-filter="desing">
-          Design
-        </span>
       </div>
 
       <div className="work__container container grid">
         <div className="work__card mix web">
           <img src={work1} alt="Demo" className="work__img" />
-          <h3 className="work__title">Web Desing</h3>
-          <a href="#" className="work__button">
+          <h3 className="work__title">Job Board</h3>
+          <p className="work__description">
+            <strong>SIDE PROJECT: </strong> React, MongoDB, GraphQl, Express
+          </p>
+          <a
+            href="https://itempleos.netlify.app/"
+            target="_blank"
+            className="work__button"
+            rel="noreferrer"
+          >
             Demo <BiRightArrowAlt className="work__icon" />
           </a>
         </div>
-        <div className="work__card mix desing">
+        <div className="work__card mix web">
           <img src={work2} alt="Demo" className="work__img" />
-          <h3 className="work__title">App movil</h3>
-          <a href="#" className="work__button">
+          <h3 className="work__title">Web3 Crypto Wallet</h3>
+          <p className="work__description">
+            <strong>SIDE PROJECT: </strong> React, Solidity, Ether.js, Metatask
+          </p>
+          <a
+            href="krypsto.netlify.app"
+            target="_blank"
+            className="work__button"
+            rel="noreferrer"
+          >
             Demo <BiRightArrowAlt className="work__icon" />
           </a>
         </div>
         <div className="work__card mix web">
           <img src={work3} alt="Demo" className="work__img" />
-          <h3 className="work__title">Web Desing</h3>
-          <a href="#" className="work__button">
+          <h3 className="work__title">Rare Flats</h3>
+          <p className="work__description">
+            PSD to HTML: Bootstrap, Gulp4, CSS3
+          </p>
+          <a
+            href="https://jlarteagap.github.io/rare_flats/"
+            target="_blank"
+            className="work__button"
+            rel="noreferrer"
+          >
             Demo <BiRightArrowAlt className="work__icon" />
           </a>
         </div>
         <div className="work__card mix movil">
           <img src={work4} alt="Demo" className="work__img" />
-          <h3 className="work__title">App Movil</h3>
-          <a href="#" className="work__button">
+          <h3 className="work__title">Coopama</h3>
+          <p className="work__description">
+            PSD to HTML: Bootstrap, Gulp4, CSS3
+          </p>
+          <a
+            href="https://jlarteagap.github.io/coopama/"
+            target="_blank"
+            className="work__button"
+            rel="noreferrer"
+          >
             Demo <BiRightArrowAlt className="work__icon" />
           </a>
         </div>
