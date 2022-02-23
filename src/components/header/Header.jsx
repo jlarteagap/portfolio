@@ -8,6 +8,7 @@ import {
   BiMessageSquare,
   BiMoon
 } from 'react-icons/bi'
+import DarkMode from './DarkMode'
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -55,7 +56,7 @@ const Header = () => {
             </li>
           </ul>
         </div>
-        <BiMoon className="change-theme" id="theme-button" />
+        <DarkMode />
       </nav>
     </div>
   )
