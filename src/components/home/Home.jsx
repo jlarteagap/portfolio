@@ -1,5 +1,5 @@
 import React from 'react'
-import test from '../../../assets/img/test.png'
+
 import { BiMouse } from 'react-icons/bi'
 import { BsLinkedin, BsGithub, BsTwitter } from 'react-icons/bs'
 
@@ -24,9 +24,7 @@ const Home = () => {
             About me
           </a>
         </div>
-        <div className="home__handle">
-          <img src={test} alt="Perfil" className="home__img" />
-        </div>
+
         <div className="home__social">
           <a
             href="https://www.linkedin.com/in/jorge-luis-arteaga-perez/"
