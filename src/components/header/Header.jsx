@@ -5,8 +5,7 @@ import {
   BiUser,
   BiBook,
   BiBriefcase,
-  BiMessageSquare,
-  BiMoon
+  BiMessageSquare
 } from 'react-icons/bi'
 import DarkMode from './DarkMode'
 
@@ -25,7 +24,7 @@ const Header = () => {
     <div className={`header ${isScrolled ? 'scroll-header' : ''}`} id="header">
       <nav className="nav container">
         <a href="#" className="nav__logo" rel="noreferer">
-          Jorge Arteaga
+          Jorge Luis Arteaga
         </a>
         <div className="nav__menu">
           <ul className="nav__list">
