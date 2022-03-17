@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: 'Jorge Luis Arteaga',
-    description: 'Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.',
-    author: '@gatsbyjs',
-    siteUrl: 'https://gatsbystarterdefaultsource.gatsbyjs.io/'
+    description: 'Frontend developer specialist in Web Layout Developer',
+    author: 'Jorge Arteaga',
+    siteUrl: 'http://jlarteaga.com'
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -28,7 +28,7 @@ module.exports = {
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,
         display: 'minimal-ui',
-        icon: 'src/images/gatsby-icon.png' // This path is relative to the root of the site.
+        icon: 'src/images/ja.png' // This path is relative to the root of the site.
       }
     }
     // this (optional) plugin enables Progressive Web App + Offline functionality
