@@ -7,6 +7,7 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import ThemeContextWrapper from "../theme/ThemeContextWrapper"
 import Home from "../components/home"
+import About from "../components/about"
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
@@ -24,6 +25,7 @@ return (
     <Layout>
       <Seo title="Home" />
       <Home siteTitle={data.site.siteMetadata?.title} />
+      <About />
       <h1>Hi people</h1>
       <p>Welcome to your new Gatsby site.</p>
       <p>Now go build something great.</p>
