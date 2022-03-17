@@ -1,14 +1,29 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
+import { useStaticQuery, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import ThemeContextWrapper from "../theme/ThemeContextWrapper"
-const IndexPage = () => (
+import Home from "../components/home"
+
+const IndexPage = () => {
+  const data = useStaticQuery(graphql`
+    query titleQuery {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `)
+
+return (
   <ThemeContextWrapper>
     <Layout>
       <Seo title="Home" />
+      <Home siteTitle={data.site.siteMetadata?.title} />
       <h1>Hi people</h1>
       <p>Welcome to your new Gatsby site.</p>
       <p>Now go build something great.</p>
@@ -28,6 +43,6 @@ const IndexPage = () => (
       </p>
     </Layout>
   </ThemeContextWrapper>
-)
+)}
 
 export default IndexPage

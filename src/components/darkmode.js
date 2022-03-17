@@ -5,7 +5,6 @@ import { ThemeContext, themes } from '../context/ThemeContext'
 
 const DarkMode = () => {
   const [darkMode, setDarkMode] = useState(true)
-  console.log(themes)
   return (
     <ThemeContext.Consumer>
       {({ changeTheme }) => (
