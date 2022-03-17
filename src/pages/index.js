@@ -8,6 +8,10 @@ import Seo from "../components/seo"
 import ThemeContextWrapper from "../theme/ThemeContextWrapper"
 import Home from "../components/home"
 import About from "../components/about"
+import Skills from "../components/skills"
+import Services from "../components/services"
+import Work from "../components/work"
+import Contact from "../components/contact"
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
@@ -26,23 +30,10 @@ return (
       <Seo title="Home" />
       <Home siteTitle={data.site.siteMetadata?.title} />
       <About />
-      <h1>Hi people</h1>
-      <p>Welcome to your new Gatsby site.</p>
-      <p>Now go build something great.</p>
-      <StaticImage
-        src="../images/gatsby-astronaut.png"
-        width={300}
-        quality={95}
-        formats={["auto", "webp", "avif"]}
-        alt="A Gatsby astronaut"
-        style={{ marginBottom: `1.45rem` }}
-      />
-      <p>
-        <Link to="/page-2/">Go to page 2</Link> <br />
-        <Link to="/using-typescript/">Go to "Using TypeScript"</Link> <br />
-        <Link to="/using-ssr">Go to "Using SSR"</Link> <br />
-        <Link to="/using-dsg">Go to "Using DSG"</Link>
-      </p>
+      <Skills />
+      <Services />
+      <Work />
+      <Contact />
     </Layout>
   </ThemeContextWrapper>
 )}
