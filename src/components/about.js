@@ -13,11 +13,9 @@ const About = () => {
         <StaticImage
             src="../images/perfil.png"
             className='about__img'
-            // width={300}
-            // quality={95}
             formats={["auto", "webp", "avif"]}
             alt="Jorge Luis Arteaga"
-            // style={{ marginBottom: `1.45rem` }}
+
         />
         <div className="about__data">
           <div className="about__info">

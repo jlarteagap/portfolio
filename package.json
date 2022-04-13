@@ -6,6 +6,7 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "@emailjs/browser": "^3.4.0",
+    "animate.css": "^4.1.1",
     "gatsby": "^4.9.3",
     "gatsby-plugin-gatsby-cloud": "^4.9.1",
     "gatsby-plugin-image": "^2.9.1",
