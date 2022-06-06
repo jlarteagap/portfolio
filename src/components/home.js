@@ -39,7 +39,7 @@ const Home = () => {
         <div className="home__buttons">
           <a
             download
-            href="../assets/pdf/Jorge-Luis-Arteaga-eng.pdf"
+            href="../assets/pdf/jorge-arteaga-eng.pdf"
             className="button button--ghost"
           >
             Download CV
