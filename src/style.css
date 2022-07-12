@@ -620,6 +620,66 @@ background-color: var(--first-color);
 color: var(--body-color);
 }
 
+/*=============== Blog ===============*/
+.blog__container{
+  padding-top: 1rem;
+}
+.blog__item{
+  cursor: pointer;
+  color: var(--title-color);
+  padding: .25rem .75rem;
+  font-weight: var(--font-medium);
+  border-radius: .5rem;
+}
+
+.blog__card{
+  background-color: var(--container-color);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.blog__card a{
+  color: var(--first-color);
+}
+
+
+.blog__img{
+  max-width: 400px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 1rem;
+  margin-bottom: .75rem;
+}
+
+.blog__title{
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  margin-bottom: .25rem;
+}
+.blog__description{
+  font-size: var(--tiny-font-size)
+}
+.blog__button{
+  width: max-content;
+  color: var(--first-color);
+  font-size: var(--small-font-size);
+  display: flex;
+  align-items: center;
+  column-gap: .25rem;
+}
+.blog__button:hover, .blog__icon{
+  transform: translateX(.25rem);
+}
+
+.blog__icon{
+  font-size: 1rem;
+  transition: .4s;
+}
+/* Active item work*/
+/* mixit */
+.active-work{
+background-color: var(--first-color);
+color: var(--body-color);
+}
 /*=============== CONTACT ===============*/
 .contact__container{
   row-gap: 3rem;
@@ -846,7 +906,7 @@ color: var(--body-color);
 }
 
 @media screen and (min-width: 767px) {
-  .work__container{
+  .work__container, .blog__container{
     grid-template-columns: repeat(2, max-content);
   }
   .contact__container{

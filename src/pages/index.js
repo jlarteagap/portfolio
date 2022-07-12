@@ -10,6 +10,7 @@ import Skills from "../components/skills"
 import Services from "../components/services"
 import Work from "../components/work"
 import Contact from "../components/contact"
+import BlogList from "../components/blog/BlogList"
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
@@ -31,6 +32,7 @@ return (
       <Skills />
       <Services />
       <Work />
+      <BlogList />
       <Contact />
     </Layout>
   </ThemeContextWrapper>

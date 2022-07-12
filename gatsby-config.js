@@ -30,6 +30,18 @@ module.exports = {
         display: 'minimal-ui',
         icon: 'src/images/ja.png' // This path is relative to the root of the site.
       }
+    },
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
+        trackingIds: [
+        "G-QF42PNDC7S", // Google Analytics / GA
+        ],
+        pluginConfig: {
+          // Puts tracking script in the head instead of the body
+          head: true
+        },
+      },
     }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
