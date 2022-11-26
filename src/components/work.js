@@ -1,5 +1,5 @@
 import React from 'react'
-import { StaticImage } from "gatsby-plugin-image"
+import { Image } from "next/image"
 
 import { BiRightArrowAlt } from 'react-icons/bi'
 const Work = () => {
@@ -19,12 +19,11 @@ const Work = () => {
 
       <div className="work__container container grid">
         <div className="work__card mix web">
-          <StaticImage
+          {/* <Image
                 src="../images/work1.png"
                 className='work__img'
-                formats={["auto", "webp", "avif"]}
                 alt="Job Boards"
-          />
+          /> */}
           <h3 className="work__title">Job Board</h3>
           <p className="work__description">
             <strong>SIDE PROJECT: </strong> React, MongoDB, GraphQl, Express
@@ -39,12 +38,11 @@ const Work = () => {
           </a>
         </div>
         <div className="work__card mix web">
-            <StaticImage
+            {/* <Image
                 src="../images/work2.png"
                 className='work__img'
-                formats={["auto", "webp", "avif"]}
                 alt="Web3 Crypto Wallet"
-            />
+            /> */}
           <h3 className="work__title">Web3 Crypto Wallet</h3>
           <p className="work__description">
             <strong>SIDE PROJECT: </strong> React, Solidity, Ether.js, Metatask
@@ -59,12 +57,11 @@ const Work = () => {
           </a>
         </div>
         <div className="work__card mix web">
-            <StaticImage
+            {/* <Image
                 src="../images/work3.png"
                 className='work__img'
-                formats={["auto", "webp", "avif"]}
                 alt="Rare Flats"
-            />
+            /> */}
           <h3 className="work__title">Rare Flats</h3>
           <p className="work__description">
             PSD to HTML: Bootstrap, Gulp4, CSS3
@@ -79,12 +76,11 @@ const Work = () => {
           </a>
         </div>
         <div className="work__card mix movil">
-            <StaticImage
+            {/* <Image
                 src="../images/work4.png"
                 className='work__img'
-                formats={["auto", "webp", "avif"]}
                 alt="Coopama"
-            />
+            /> */}
           <h3 className="work__title">Coopama</h3>
           <p className="work__description">
             PSD to HTML: Bootstrap, Gulp4, CSS3
