@@ -1,7 +1,8 @@
 import React from 'react'
-import { Image } from "next/image"
-
+import Image from "next/image"
+import work1 from "../../public/images/work1.png"
 import { BiRightArrowAlt } from 'react-icons/bi'
+
 const Work = () => {
   return (
     <section className="work section" id="work">
@@ -19,11 +20,11 @@ const Work = () => {
 
       <div className="work__container container grid">
         <div className="work__card mix web">
-          {/* <Image
-                src="../images/work1.png"
+          <Image
+                src={work1}
                 className='work__img'
                 alt="Job Boards"
-          /> */}
+          />
           <h3 className="work__title">Job Board</h3>
           <p className="work__description">
             <strong>SIDE PROJECT: </strong> React, MongoDB, GraphQl, Express
@@ -38,11 +39,13 @@ const Work = () => {
           </a>
         </div>
         <div className="work__card mix web">
-            {/* <Image
-                src="../images/work2.png"
+            <Image
+                src="/public/images/work2.png"
                 className='work__img'
                 alt="Web3 Crypto Wallet"
-            /> */}
+                width={100}
+                height={100}
+            />
           <h3 className="work__title">Web3 Crypto Wallet</h3>
           <p className="work__description">
             <strong>SIDE PROJECT: </strong> React, Solidity, Ether.js, Metatask
@@ -57,11 +60,13 @@ const Work = () => {
           </a>
         </div>
         <div className="work__card mix web">
-            {/* <Image
-                src="../images/work3.png"
+            <Image
+                src="/public/images/work3.png"
                 className='work__img'
                 alt="Rare Flats"
-            /> */}
+                width={100}
+                height={100}
+            />
           <h3 className="work__title">Rare Flats</h3>
           <p className="work__description">
             PSD to HTML: Bootstrap, Gulp4, CSS3
@@ -71,16 +76,20 @@ const Work = () => {
             target="_blank"
             className="work__button"
             rel="noreferrer"
+            width={100}
+            height={100}
           >
             Demo <BiRightArrowAlt className="work__icon" />
           </a>
         </div>
         <div className="work__card mix movil">
-            {/* <Image
-                src="../images/work4.png"
+            <Image
+                src="/public/images/work4.png"
                 className='work__img'
                 alt="Coopama"
-            /> */}
+                width={100}
+                height={100}
+            />
           <h3 className="work__title">Coopama</h3>
           <p className="work__description">
             PSD to HTML: Bootstrap, Gulp4, CSS3

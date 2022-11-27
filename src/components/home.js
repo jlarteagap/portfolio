@@ -5,7 +5,7 @@ import { BsLinkedin, BsGithub, BsTwitter } from 'react-icons/bs'
 
 import AnimatedLetters from './animateLetters'
 
-const Home = () => {
+const Home = ({siteTitle}) => {
   const[letterClass, setLetterClass] = useState('text-animate')
   const nameArray = ['J', 'o', 'r', 'g','e', '  ', 'A', 'r', 't', 'e', 'a', 'g', 'a']
   const jobArray = ['F','r','o','n','t','e','n','d','  ', 'D','e','v','e','l','o','p','e','r']
