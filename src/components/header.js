@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from "react"
 import PropTypes from "prop-types"
-import { Link } from "gatsby"
+
 import {
   BiHomeAlt,
   BiUser,
@@ -14,15 +14,6 @@ import DarkMode from "./darkmode"
 
 const Header = ({ siteTitle }) => {
   const [isScrolled, setIsScrolled] = useState(false)
-  const scrollHeader = () => {
-    const header = document.getElementById('header')
-    console.log(header)
-  }
-  useEffect(() => {
-    window.addEventListener('scroll', () => {
-      setIsScrolled(window.scrollY > 50)
-    })
-  }, [])
 
   return(
     <div className={`header ${isScrolled ? 'scroll-header' : ''}`} id="header">
@@ -33,9 +24,11 @@ const Header = ({ siteTitle }) => {
         <div className="nav__menu">
           <ul className="nav__list">
             <li className="nav__item">
-              <Link to="/" className="nav__link active-link">
+              {/* <Link href="/">
+                <a className="nav__link active-link">
                 <BiHomeAlt />
-              </Link>
+                </a>
+              </Link> */}
             </li>
             <li className="nav__item">
               <a href="#about" className="nav__link">
