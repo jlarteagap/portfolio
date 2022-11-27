@@ -1,7 +1,6 @@
 import * as React from "react"
 
 import Layout from "../src/components/layout"
-import ThemeContextWrapper from "../src/theme/ThemeContextWrapper"
 import Home from "../src/components/home"
 import About from "../src/components/about"
 import Skills from "../src/components/skills"
@@ -10,19 +9,17 @@ import Work from "../src/components/work"
 import Contact from "../src/components/contact"
 import BlogList from "../src/components/blog/BlogList"
 
-const index =() =>{
+const index = () => {
   return (
-    <ThemeContextWrapper>
-      <Layout>
-        <Home siteTitle="Data" />
-        <About />
-        <Skills />
-        <Services />
-        <Work />
-        <BlogList />
-        <Contact />
-      </Layout>
-    </ThemeContextWrapper>
+    <>
+      <Home siteTitle="Data" />
+      <About />
+      <Skills />
+      <Services />
+      <Work />
+      <BlogList />
+      <Contact />
+    </>
   )
 }
 
