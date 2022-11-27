@@ -1,6 +1,9 @@
 import React from 'react'
 import Image from "next/image"
 import work1 from "../../public/images/work1.png"
+import work2 from "../../public/images/work2.png"
+import work3 from "../../public/images/work3.png"
+import work4 from "../../public/images/work4.png"
 import { BiRightArrowAlt } from 'react-icons/bi'
 
 const Work = () => {
@@ -40,7 +43,7 @@ const Work = () => {
         </div>
         <div className="work__card mix web">
             <Image
-                src="/public/images/work2.png"
+                src={work2}
                 className='work__img'
                 alt="Web3 Crypto Wallet"
                 width={100}
@@ -61,7 +64,7 @@ const Work = () => {
         </div>
         <div className="work__card mix web">
             <Image
-                src="/public/images/work3.png"
+                src={work3}
                 className='work__img'
                 alt="Rare Flats"
                 width={100}
@@ -84,7 +87,7 @@ const Work = () => {
         </div>
         <div className="work__card mix movil">
             <Image
-                src="/public/images/work4.png"
+                src={work4}
                 className='work__img'
                 alt="Coopama"
                 width={100}
