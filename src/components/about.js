@@ -1,7 +1,8 @@
 import React from 'react'
 
 import { BiAward, BiBriefcaseAlt, BiSupport } from 'react-icons/bi'
-import { Image } from 'next/link'
+import Image from 'next/link'
+import profile from '../../public/images/perfil.png'
 
 const About = () => {
   return (
@@ -11,10 +12,9 @@ const About = () => {
 
       <div className="about__container container grid">
         {/* <Image
-            src="../images/perfil.png"
+            src={work1}
             className='about__img'
             alt="Jorge Luis Arteaga"
-
         /> */}
         <div className="about__data">
           <div className="about__info">
