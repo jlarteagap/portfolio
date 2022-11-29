@@ -25,7 +25,7 @@
   --text-color-light: hsl(var(--second-hue), 4%, 55%);
   --body-color: hsl(var(--second-hue), 48%, 8%);
   --container-color: hsl(var(--second-hue), 32%, 12%);
-
+  --rainbow-gradient: linear-gradient(-90deg,#adfbda 0,#35c3ff 30%,#fda399 50%,#76d880 70%,#ebf38b 90%,#adfbda 100%);
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: 'Poppins', sans-serif;
@@ -1126,4 +1126,25 @@ color: var(--body-color);
 }
 ._35 {
   animation-delay: 3.5s;
+}
+
+/* Blog Title  */
+.blog_title{
+  background-image: var(--rainbow-gradient,#fff);
+  background-size: 100%;
+  background-repeat: repeat;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  filter: drop-shadow(0 0 2rem #000);
+  text-shadow: none!important;
+}
+.blog_body{
+  font-size: 1.15rem;
+}
+
+.blog_content{
+  display: grid;
+  grid-template-columns: 65% 1fr;
+  grid-gap: 3rem;
 }
