@@ -20,7 +20,6 @@ export default function BlogList() {
         {
             blog.map((item, index) => {
                 const { title, link } = item;
-                console.log(title.rendered)
                 return(
                     <div className="blog__card" key={index}>
                         <div className="blog__content__img">

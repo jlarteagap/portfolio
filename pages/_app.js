@@ -8,7 +8,7 @@ export default function MyApp({ Component, pageProps }) {
     <ThemeContextWrapper>
       <Layout>
         <Component {...pageProps} />
-      </Layout>
+      </Layout >
     </ThemeContextWrapper>
   )
 }

@@ -1,6 +1,7 @@
 import React from "react";
+import { Social } from "../../src/components/social";
 
-function Blog() {
+function Blog({ data: { social } }) {
   return (
     <section className="container blog_content">
       <article className="content ">
@@ -24,9 +25,22 @@ function Blog() {
         Voluptatem ducimus voluptatibus eos, tenetur, omnis non expedita at sunt
         iusto officiis, velit quaerat sit officia aperiam laborum laudantium
         ratione eligendi molestiae?
+        <h3 className="is-size-4">Redes Sociales</h3>
+        <Social social={social} />
       </aside>
     </section>
   );
+}
+
+export async function getServerSideProps() {
+  const res = await fetch("http://localhost:3000/api/about");
+  const data = await res.json();
+
+  return {
+    props: {
+      data,
+    },
+  };
 }
 
 export default Blog;

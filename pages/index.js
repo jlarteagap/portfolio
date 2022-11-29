@@ -8,10 +8,10 @@ import Work from '../src/components/work'
 import Contact from '../src/components/contact'
 import BlogList from '../src/components/blog/BlogList'
 
-const index = () => {
+const index = ({data}) => {
   return (
     <>
-      <Home siteTitle="Data" />
+      <Home siteTitle="Jorge Arteaga" />
       <About />
       <Skills />
       <Services />
@@ -23,3 +23,16 @@ const index = () => {
 }
 
 export default index
+
+export async function getServerSideProps() {
+  const res = await fetch("http://localhost:3000/api/about");
+  const data = await res.json();
+
+  return {
+    props: {
+      data,
+    },
+  };
+}
+
+
