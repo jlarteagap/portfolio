@@ -17,10 +17,17 @@ function Blog({ data: { social } }) {
             sapiente nemo maxime nostrum id ratione. Nulla quibusdam
             perspiciatis quisquam.
           </p>
+          <div className="">
+            <div>Metricas</div>
+            <div>Multicenter</div>
+            <div>Dismac</div>
+            <div>Tienda Amiga</div>
+            <div></div>
+          </div>
         </section>
         <footer>Footer</footer>
       </article>
-      <aside className="blog_aside">
+      <aside className="blog_aside p-5">
         Sidebar Lorem ipsum dolor sit amet consectetur adipisicing elit.
         Voluptatem ducimus voluptatibus eos, tenetur, omnis non expedita at sunt
         iusto officiis, velit quaerat sit officia aperiam laborum laudantium

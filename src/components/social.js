@@ -14,25 +14,25 @@ export const Social = () => {
   }, []);
   return (
 
-    <ul className="footer__social">
+    <ul className="social">
       <li>
         <a
           href={social.linkedin}
           target="_blank"
-          className="footer__social-link"
+          className="social-link"
           rel="noreferrer"
         >
-          <BsLinkedin />
+          <BsLinkedin size={24} />
         </a>
       </li>
       <li>
         <a
           href={social.github}
           target="_blank"
-          className="footer__social-link"
+          className="social-link"
           rel="noreferrer"
         >
-          <BsGithub />
+          <BsGithub size={24}/>
         </a>
       </li>
       <li>
@@ -40,9 +40,9 @@ export const Social = () => {
           href={social.twitter}
           target="_blank"
           rel="noreferrer"
-          className="footer__social-link"
+          className="social-link"
         >
-          <BsTwitter />
+          <BsTwitter size={24} />
         </a>
       </li>
     </ul>
