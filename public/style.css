@@ -253,9 +253,14 @@ body.light-theme{
 }
 .nav__link {
   color: var(--text-color);
-  padding: .4rem;
   display: flex;
-  border-radius: 5rem;
+  transition: .4s;
+}
+
+.nav__link:hover{
+  background-color: transparent !important;
+  color: var(--title-color-alt) !important;
+  border-bottom: solid 2px var(--first-color-alt);
 }
 /* Active link */
 .active-link {

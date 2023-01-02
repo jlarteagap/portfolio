@@ -35,7 +35,11 @@ const Header = ({ siteTitle }) => {
             <Navbar />
           </div>
         </div>
-        <DarkMode />
+        <div className="navbar-end">
+          <div className="navbar-item">
+            <DarkMode />
+          </div>
+        </div>
       </nav>
     </div>
   )
