@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 
 import DarkMode from '../darkmode'
 import { Navbar } from './navbar'
+import { DownloadButton } from '../Utils/utils'
 
 const Header = ({ siteTitle }) => {
   const [isScrolled] = useState(false)
@@ -36,6 +37,9 @@ const Header = ({ siteTitle }) => {
           </div>
         </div>
         <div className="navbar-end">
+          <div className="navbar-item">
+            <DownloadButton />
+          </div>
           <div className="navbar-item">
             <DarkMode />
           </div>
