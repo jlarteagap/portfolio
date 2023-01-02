@@ -40,11 +40,11 @@ const Home = () => {
           <a
             download
             href="../assets/pdf/jorge-arteaga-eng.pdf"
-            className="button button--ghost"
+            className="btn button button--ghost"
           >
             Download CV
           </a>
-          <a href="#about" className="button">
+          <a href="#about" className="btn button">
             About me
           </a>
         </div>

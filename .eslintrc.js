@@ -23,7 +23,6 @@ module.exports = {
         semi: false
       }
     ],
-    'react/prop-types': 'off',
-    'react/jsx-runtime': this.extends
+    'react/prop-types': 'off'
   }
 }
