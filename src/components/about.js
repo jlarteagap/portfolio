@@ -1,7 +1,8 @@
 import React from 'react'
 
 import { BiAward, BiBriefcaseAlt, BiSupport } from 'react-icons/bi'
-import { StaticImage } from "gatsby-plugin-image"
+import Image from 'next/link'
+import profile from '../../public/images/perfil.png'
 
 const About = () => {
   return (
@@ -10,15 +11,11 @@ const About = () => {
       <h2 className="section__title">About Me</h2>
 
       <div className="about__container container grid">
-        <StaticImage
-            src="../images/perfil.png"
+        {/* <Image
+            src={work1}
             className='about__img'
-            // width={300}
-            // quality={95}
-            formats={["auto", "webp", "avif"]}
             alt="Jorge Luis Arteaga"
-            // style={{ marginBottom: `1.45rem` }}
-        />
+        /> */}
         <div className="about__data">
           <div className="about__info">
             <div className="about__box">

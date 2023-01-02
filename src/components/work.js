@@ -1,7 +1,11 @@
 import React from 'react'
-import { StaticImage } from "gatsby-plugin-image"
-
+import Image from "next/image"
+import work1 from "../../public/images/work1.png"
+import work2 from "../../public/images/work2.png"
+import work3 from "../../public/images/work3.png"
+import work4 from "../../public/images/work4.png"
 import { BiRightArrowAlt } from 'react-icons/bi'
+
 const Work = () => {
   return (
     <section className="work section" id="work">
@@ -19,10 +23,9 @@ const Work = () => {
 
       <div className="work__container container grid">
         <div className="work__card mix web">
-          <StaticImage
-                src="../images/work1.png"
+          <Image
+                src={work1}
                 className='work__img'
-                formats={["auto", "webp", "avif"]}
                 alt="Job Boards"
           />
           <h3 className="work__title">Job Board</h3>
@@ -39,11 +42,12 @@ const Work = () => {
           </a>
         </div>
         <div className="work__card mix web">
-            <StaticImage
-                src="../images/work2.png"
+            <Image
+                src={work2}
                 className='work__img'
-                formats={["auto", "webp", "avif"]}
                 alt="Web3 Crypto Wallet"
+                width={100}
+                height={100}
             />
           <h3 className="work__title">Web3 Crypto Wallet</h3>
           <p className="work__description">
@@ -59,11 +63,12 @@ const Work = () => {
           </a>
         </div>
         <div className="work__card mix web">
-            <StaticImage
-                src="../images/work3.png"
+            <Image
+                src={work3}
                 className='work__img'
-                formats={["auto", "webp", "avif"]}
                 alt="Rare Flats"
+                width={100}
+                height={100}
             />
           <h3 className="work__title">Rare Flats</h3>
           <p className="work__description">
@@ -74,16 +79,19 @@ const Work = () => {
             target="_blank"
             className="work__button"
             rel="noreferrer"
+            width={100}
+            height={100}
           >
             Demo <BiRightArrowAlt className="work__icon" />
           </a>
         </div>
         <div className="work__card mix movil">
-            <StaticImage
-                src="../images/work4.png"
+            <Image
+                src={work4}
                 className='work__img'
-                formats={["auto", "webp", "avif"]}
                 alt="Coopama"
+                width={100}
+                height={100}
             />
           <h3 className="work__title">Coopama</h3>
           <p className="work__description">

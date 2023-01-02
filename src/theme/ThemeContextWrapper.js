@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react'
 import { ThemeContext, themes } from '../context/ThemeContext'
 
-const ThemeContextWrapper = props => {
+const ThemeContextWrapper = ({children}) => {
   const [theme, setTheme] = useState(themes.dark)
 
   function changeTheme(theme) {
@@ -23,7 +23,7 @@ const ThemeContextWrapper = props => {
 
   return (
     <ThemeContext.Provider value={{ theme: themes, changeTheme: changeTheme }}>
-      {props.children}
+      {children}
     </ThemeContext.Provider>
   )
 }
