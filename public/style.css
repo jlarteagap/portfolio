@@ -14,16 +14,16 @@
         Pink: hsl(356, 66%, 75%)
         Teal: hsl(174, 63%, 62%)
   */
-  --first-hue:187;
-  --sat: 71%;
-  --lig:50%;
+  --first-hue:0;
+  --sat: 0%;
+  --lig:10%;
   --second-hue: 219;
   --first-color: hsl(var(--first-hue), var(--sat), var(--lig));
   --first-color-alt: hsl(var(--first-hue), var(--sat), 71%); /* -4% */
   --title-color: hsl(var(--second-hue), 15%, 95%);
   --text-color: hsl(var(--second-hue), 8%, 75%);
   --text-color-light: hsl(var(--second-hue), 4%, 55%);
-  --body-color: hsl(var(--second-hue), 48%, 8%);
+  --body-color: hsl(var(--first-hue), 48%, 8%);
   --container-color: hsl(var(--second-hue), 32%, 12%);
   --rainbow-gradient: linear-gradient(-90deg,#adfbda 0,#35c3ff 30%,#fda399 50%,#76d880 70%,#ebf38b 90%,#adfbda 100%);
   /*========== Font and typography ==========*/
@@ -237,10 +237,10 @@ body.light-theme{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: var(--first-color);
+  color: var(--title-color-alt);
 }
 .nav__logo:hover{
-  color: var(--first-color-alt);
+  color: var(--title-color);
 }
 .nav__menu {
   position: fixed;
