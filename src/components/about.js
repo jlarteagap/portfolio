@@ -1,6 +1,6 @@
 import React from 'react'
 import { BiAward, BiBriefcaseAlt, BiSupport } from 'react-icons/bi'
-
+import Image from 'next/image'
 const About = () => {
   return (
     <section className="about section" id="about">
@@ -8,17 +8,19 @@ const About = () => {
       <h2 className="section__title">About Me</h2>
 
       <div className="about__container container grid">
-        {/* <Image
-          src={profile.src}
+        <Image
+          src="/images/perfil.png"
           className="about__img"
           alt="Jorge Luis Arteaga"
-        /> */}
+          width="400"
+          height="300"
+        />
         <div className="about__data">
           <div className="about__info">
             <div className="about__box">
               <BiAward className="about__icon" />
               <h3 className="about__title">Experience</h3>
-              <span className="about__subtitle">8 Years Working</span>
+              <span className="about__subtitle">10s Years Working</span>
             </div>
             <div className="about__box">
               <BiBriefcaseAlt className="about__icon" />
@@ -32,15 +34,25 @@ const About = () => {
             </div>
           </div>
           <p className="about__description">
-            Frontend Developer with experience in layout prototypes, interested
-            in deploying proposals and designed with tools like Figma, achieving
-            user-friendly websites with languages like javascript (React, Node)
-            taking into account UX strategies
-            <br />
-            Also working with backend technologies with Django and Node.
-            Databases including MongoDB and GraphQL
+            I am a Frontend Developer with over 10 years of experience in
+            prototyping and creating attractive and functional designs. I use
+            tools like Figma, Adobe XD, and Photoshop to create visual proposals
+            that become high-quality solutions.
           </p>
-          <a href="#contact" className="button">
+          <p>
+            Currently,I am working on ReactJs, applying my skills in creating
+            Templates for Wordpress. I love learning and trying new
+            technologies, and I am interested in finding opportunities that
+            allow me to continue developing my skills and knowledge.
+          </p>
+          <p>
+            If you are looking for a Frontend Developer with experience in
+            prototyping and design, do not hesitate to contact me. I am willing
+            to work on interesting and challenging projects that allow me to
+            continue growing as a professional.
+          </p>
+
+          <a href="#contact" className="button mt-5">
             Contact me
           </a>
         </div>

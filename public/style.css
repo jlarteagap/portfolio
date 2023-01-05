@@ -24,7 +24,7 @@
   --text-color: hsl(var(--second-hue), 8%, 75%);
   --text-color-light: hsl(var(--second-hue), 4%, 55%);
   --body-color: hsl(var(--first-hue), 48%, 8%);
-  --container-color: hsl(var(--second-hue), 32%, 12%);
+  --container-color: hsl(var(--second-hue), 2%, 30%);
   --rainbow-gradient: linear-gradient(-90deg,#adfbda 0,#35c3ff 30%,#fda399 50%,#76d880 70%,#ebf38b 90%,#adfbda 100%);
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -140,7 +140,7 @@ body.light-theme{
 }
 
 .theme-theme .section__subtitle{
-  color: var(--text-color);
+  color: var(--title-color);
 }
 .light-theme .home__social-link{
   box-shadow: 0 2px 8px hsla(var(--second-hue), 48%, 8%, .1);
@@ -205,14 +205,14 @@ body.light-theme{
 
 .section__title {
   font-size: var(--h2-font-size);
-  color: var(--first-color);
+  color: var(--title-color);
   margin-bottom: 2rem;
 }
 
 .section__subtitle {
   display: block;
   font-size: var(--smaller-font-size);
-  color: var(--text-color-light);
+  color: var(--title-color-alt);
 }
 
 /*=============== HEADER & NAV===============*/
@@ -414,7 +414,7 @@ body.light-theme{
 }
 .about__icon{
   font-size: 1.5rem;
-  color: var(--first-color);
+  color: var(--title-colors);
   margin-bottom: .5rem;
 }
 .about__title{
