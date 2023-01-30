@@ -23,8 +23,8 @@
   --title-color: hsl(var(--second-hue), 15%, 95%);
   --text-color: hsl(var(--second-hue), 8%, 75%);
   --text-color-light: hsl(var(--second-hue), 4%, 55%);
-  --body-color: hsl(var(--first-hue), 48%, 8%);
-  --container-color: hsl(var(--second-hue), 2%, 30%);
+  --body-color: hsl(var(--first-hue), 48%, 0%);
+  --container-color: hsl(var(--second-hue), 70%, 10%);
   --rainbow-gradient: linear-gradient(-90deg,#adfbda 0,#35c3ff 30%,#fda399 50%,#76d880 70%,#ebf38b 90%,#adfbda 100%);
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -125,7 +125,7 @@ body.light-theme{
   --title-color: hsl(var(--second-hue), 15%, 15%);
   --text-color: hsl(var(--second-hue), 8%, 35%);
   --body-color: hsl(var(--second-hue), 100%, 99%);
-  --container-color: #fff;
+  --container-color: var(--body-color);
 }
 
 /*========== 
@@ -147,7 +147,13 @@ body.light-theme{
 }
 .light-theme .home__social::after,
 .light-theme .social-link{
-  background-color: var(--title-color);
+  background-color: var(--container-color);
+}
+.light-theme .social-link:hover{
+  color: var(--title-color)
+}
+.light-theme .footer__title, .light-theme .footer__link{
+  color: var(--container-color);
 }
 .light-theme .home__social-link,
 .light-theme .home__scroll,
@@ -168,7 +174,9 @@ body.light-theme{
 .light-theme .footer__copy{
   box-shadow: 0 2px 16px hsla(var(--second-hue), 48%, 8%, .1);
 }
-
+.light-theme .footer{
+  background-color: var(--title-color);
+}
 .light-theme::-webkit-scrollbar{
   background-color: hsl(var(--second-hue), 8%, 54%);
 }
@@ -764,14 +772,15 @@ color: var(--body-color);
 }
 /*=============== FOOTER ===============*/
 .footer{
-  background-color: var(--first-color);
+  background-color: var(--container-color);
 }
 .footer__container{
   padding: 2rem 0 6rem;
 }
 .footer__title,
 .footer__link{
-  color: var(--body-color);
+  color: var(--title-color);
+  margin: 0 .5rem;
 }
 .footer__title{
   text-align: center;
@@ -1143,7 +1152,7 @@ color: var(--body-color);
   column-gap: 1.25rem;
 }
 .social-link{
-  background-color: var(--body-color);
+  background-color: var(--title-color);
   color: var(--first-color);
   padding: .25rem;
   border-radius: .25rem;
@@ -1151,6 +1160,6 @@ color: var(--body-color);
   display: inline-flex;
 }
 .social-link:hover{
-  background-color: var(--first-color);
+  background-color: var(--container-color);
   color: white;
 }

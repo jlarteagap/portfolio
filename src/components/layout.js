@@ -6,11 +6,13 @@ import Footer from './footer'
 
 const Layout = ({ children }) => {
   return (
-    <div className="container">
+    <>
       <Header siteTitle={'Jorge Arteaga'} />
-      <main className="main">{children}</main>
+      <div className="container">
+        <main className="main">{children}</main>
+      </div>
       <Footer siteTitle={'Jorge Arteaga'} />
-    </div>
+    </>
   )
 }
 
