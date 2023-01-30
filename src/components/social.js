@@ -1,19 +1,18 @@
-import { useEffect, useState } from "react";
-import { BsLinkedin, BsGithub, BsTwitter } from "react-icons/bs";
+import React, { useEffect, useState } from 'react'
+import { BsLinkedin, BsGithub, BsTwitter } from 'react-icons/bs'
 
 export const Social = () => {
-  const [social, setSocial] = useState("");
+  const [social, setSocial] = useState('')
   useEffect(() => {
-    const url = 'http://localhost:3000/api/about';
-        
-    fetch(url)
-    .then(res => res.json())
-    .then(data => {
-        setSocial(data.social);
-    })
-  }, []);
-  return (
+    const url = 'http://localhost:3000/api/about'
 
+    fetch(url)
+      .then(res => res.json())
+      .then(data => {
+        setSocial(data.social)
+      })
+  }, [])
+  return (
     <ul className="social">
       <li>
         <a
@@ -32,7 +31,7 @@ export const Social = () => {
           className="social-link"
           rel="noreferrer"
         >
-          <BsGithub size={24}/>
+          <BsGithub size={24} />
         </a>
       </li>
       <li>
@@ -46,5 +45,5 @@ export const Social = () => {
         </a>
       </li>
     </ul>
-  );
-};
+  )
+}

@@ -1,5 +1,5 @@
-import React from "react";
-import { Social } from "../../src/components/social";
+import React from 'react'
+import { Social } from '../../src/components/social'
 
 function Blog({ data: { social } }) {
   return (
@@ -36,18 +36,18 @@ function Blog({ data: { social } }) {
         <Social social={social} />
       </aside>
     </section>
-  );
+  )
 }
 
 export async function getServerSideProps() {
-  const res = await fetch("http://localhost:3000/api/about");
-  const data = await res.json();
+  const res = await fetch('http://localhost:3000/api/about')
+  const data = await res.json()
 
   return {
     props: {
-      data,
-    },
-  };
+      data
+    }
+  }
 }
 
-export default Blog;
+export default Blog
