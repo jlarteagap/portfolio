@@ -1,5 +1,5 @@
 import React from 'react'
-import { BsLinkedin, BsGithub, BsTwitter } from 'react-icons/bs'
+import { Social } from './social'
 
 const Footer = ({ siteTitle }) => {
   return (
@@ -19,32 +19,7 @@ const Footer = ({ siteTitle }) => {
             </a>
           </li>
         </ul>
-        <ul className="footer__social">
-          <a
-            href="https://www.linkedin.com/in/jorge-luis-arteaga-perez/"
-            target="_blank"
-            className="footer__social-link"
-            rel="noreferrer"
-          >
-            <BsLinkedin />
-          </a>
-          <a
-            href="https://github.com/jlarteagap"
-            target="_blank"
-            className="footer__social-link"
-            rel="noreferrer"
-          >
-            <BsGithub />
-          </a>
-          <a
-            href="https://twitter.com/jlarteagap"
-            target="_blank"
-            rel="noreferrer"
-            className="footer__social-link"
-          >
-            <BsTwitter />
-          </a>
-        </ul>
+        <Social />
         <span className="footer__copy">
           &#169; Jorge Luis Arteaga - All rigths reserved
         </span>
