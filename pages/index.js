@@ -7,10 +7,12 @@ import Services from '../src/components/services'
 import Work from '../src/components/work'
 import Contact from '../src/components/contact'
 import BlogList from '../src/components/blog/BlogList'
+import SEO from '../src/components/seo/Seo'
 
 const index = ({ data }) => {
   return (
     <>
+      <SEO title="Frontend Developer" siteTitle="Jorge Luis Arteaga" />
       <Home siteTitle="Jorge Arteaga" />
       <About />
       <Skills />
