@@ -16,7 +16,7 @@ const Home = ({ siteTitle }) => {
         <div className="home__buttons">
           <DownloadButton />
           <a href="#about" className="btn button">
-            About me
+            About me``
           </a>
         </div>
 

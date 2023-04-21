@@ -11,7 +11,7 @@ const Header = ({ siteTitle }) => {
   return (
     <div className={`header ${isScrolled ? 'scroll-header' : ''}`} id="header">
       <nav
-        className="navbar is-fixed-top nav container"
+        className="navbar is-fixed-top nav container is-flex-mobile is-justify-content-space-between"
         role="navigation"
         aria-label="main navigation"
       >
@@ -19,24 +19,13 @@ const Header = ({ siteTitle }) => {
           <a href="#" className="nav__logo" rel="noreferer">
             {siteTitle}
           </a>
-          <a
-            role="button"
-            className="navbar-burger"
-            aria-label="menu"
-            aria-expanded="false"
-            data-target="navbarBasicExample"
-          >
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
         </div>
         <div className="navbar-menu">
           <div className="navbar-start">
             <Navbar />
           </div>
         </div>
-        <div className="navbar-end">
+        <div className="navbar-end is-flex-mobile is-align-items-center">
           <div className="navbar-item">
             <DownloadButton />
           </div>
