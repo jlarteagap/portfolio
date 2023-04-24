@@ -12,15 +12,15 @@ export default function BlogList() {
       })
   }, [])
   return (
-    <section className="blog section" id="blog">
+    <section className="work section" id="blog">
       <span className="section__subtitle">My Blog</span>
       <h2 className="section__title">Recent Posts</h2>
-      <div className="blog__container container grid">
+      <div className="work__container container grid">
         {blog.map((item, index) => {
           const { title, link } = item
           return (
-            <div className="blog__card" key={index}>
-              <div className="blog__content__img">
+            <div className="work__card mix web" key={index}>
+              <div className="work__img">
                 <a
                   className="blog__link"
                   href={link}

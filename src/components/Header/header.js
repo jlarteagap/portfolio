@@ -16,9 +16,9 @@ const Header = ({ siteTitle }) => {
         aria-label="main navigation"
       >
         <div className="navbar-brand">
-          <a href="#" className="nav__logo" rel="noreferer">
-            {siteTitle}
-          </a>
+          <h1 className="navbar-item">
+            <a>Jorge Luis Artega</a>
+          </h1>
         </div>
         <div className="navbar-menu">
           <div className="navbar-start">
@@ -26,7 +26,7 @@ const Header = ({ siteTitle }) => {
           </div>
         </div>
         <div className="navbar-end is-flex-mobile is-align-items-center">
-          <div className="navbar-item">
+          <div className="navbar-item px-2">
             <DownloadButton />
           </div>
           <div className="navbar-item">
