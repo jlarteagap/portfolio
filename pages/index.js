@@ -8,6 +8,7 @@ import Work from '../src/components/work'
 import Contact from '../src/components/contact'
 import BlogList from '../src/components/blog/BlogList'
 import SEO from '../src/components/seo/Seo'
+import { Experience } from '../src/components/Experience'
 
 const index = () => {
   return (
@@ -15,6 +16,7 @@ const index = () => {
       <SEO title="Frontend Developer" siteTitle="Jorge Luis Arteaga" />
       <Home siteTitle="Jorge Arteaga" />
       <About />
+      <Experience />
       <Skills />
       <Services />
       <Work />
