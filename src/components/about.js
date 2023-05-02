@@ -3,7 +3,7 @@ import React from 'react'
 const About = () => {
   return (
     <>
-      <section className="container">
+      <section className="container mt-6">
         <h2 className="is-size-1 has-text-weight-bold">
           I love create <br /> Somethings <br />
           Simple and Cleand

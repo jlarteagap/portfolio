@@ -6,7 +6,7 @@ import Image from 'next/image'
 const Home = ({ siteTitle }) => {
   return (
     <>
-      <section className="is-flex is-justify-content-center is-flex-direction-column is-align-items-center container">
+      <section className="is-flex is-justify-content-center is-flex-direction-column is-align-items-center container home__section">
         <figure className="image is-128x128">
           <Image
             src="/images/perfil.png"
@@ -17,13 +17,13 @@ const Home = ({ siteTitle }) => {
           />
         </figure>
         <div className="has-text-centered">
-          <h2 className="mt-4 is-size-4 has-text-weight-semibold is-uppercase">
+          <h2 className="mt-4 has-text-weight-bold is-size-3 is-uppercase">
             {siteTitle}
           </h2>
           <p>Frontend & React Developer</p>
 
-          <h3 className="is-size-1 is-size-3-mobile my-4">
-            Building digital products, brands, and experience.
+          <h3 className="is-size-1 is-size-4-mobile my-6  p-2 has-text-weight-semibold home__phrase headings__titles">
+            Desarrollo productos, soluciones y experiencias digitales
           </h3>
 
           <div className="is-flex is-justify-content-center">

@@ -11,7 +11,7 @@ const Header = ({ siteTitle }) => {
   return (
     <div className={`header ${isScrolled ? 'scroll-header' : ''}`} id="header">
       <nav
-        className="navbar is-fixed-top nav container is-flex-mobile is-justify-content-space-between"
+        className="navbar is-fixed-top nav container is-flex-mobile is-justify-content-space-between ja__navbar"
         role="navigation"
         aria-label="main navigation"
       >

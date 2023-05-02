@@ -1,3 +1,45 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 @import 'animate.css';
+:root{
+    --primary-color: rgba(255, 255, 255, 1);
+    --secondary-color: rgba(0, 0, 0, 1) 
+}
+.ja__navbar{
+    background-color: var(--primary-color);
+}
+.nav__link{
+    background: transparent !important;
+}
+.home__section{
+    margin-top: 10rem;
+}
+.home__phrase{
+    max-width: 50rem;
+    line-height: .85;
+}
+
+.headings__titles{
+    background: linear-gradient(93deg, var(--secondary-color) 0%, var(--primary-color) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+
+@media screen and(max-width: 480px) {
+    .home__section{
+        margin-top: 3rem;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body, html{
+        background: var(--secondary-color);
+        color: var(--primary-color);
+    }
+    .nav__link{
+        color: var(--primary-color) !important;
+    }
+    .ja__navbar{
+        background-color: var(--secondary-color);
+    }
+}
