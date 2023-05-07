@@ -3,7 +3,9 @@
 @import 'animate.css';
 :root{
     --primary-color: rgba(255, 255, 255, 1);
-    --secondary-color: rgba(0, 0, 0, 1) 
+    --secondary-color: rgba(0, 0, 0, 1);
+    --text-color: rgb(216, 216, 216, 1);
+    --decorate-color: rgb(52, 52, 52);
 }
 .ja__navbar{
     background-color: var(--primary-color);
@@ -20,7 +22,7 @@
 }
 
 .headings__titles{
-    background: linear-gradient(93deg, var(--secondary-color) 0%, var(--primary-color) 100%);
+    background: linear-gradient(93deg, var(--decorate-color) 0%, var(--primary-color) 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
 }
@@ -36,10 +38,39 @@
         background: var(--secondary-color);
         color: var(--primary-color);
     }
+    a{
+        color: var(--text-color) 
+    }
+    a:hover{
+        color: var(--decorate-color)
+    }
     .nav__link{
-        color: var(--primary-color) !important;
+        color: var(--decorate-color) !important;
+        transition: all .4s;
+    }
+    .nav__link:hover{
+        color: var(--text-color) !important;
     }
     .ja__navbar{
         background-color: var(--secondary-color);
+    }
+    .ja__buttons{
+        background: transparent !important;
+        color: var(--decorate-color) !important;
+        border-color: var(--decorate-color);
+        transition: all .3s;
+    }
+    .ja__buttons:hover{
+        border-color: var(--text-color);
+        color: var(--text-color) !important;
+    }
+    .ja__button-inverted{
+        background-color: transparent !important;
+        border-color: transparent;
+        transition: all .3s;
+    }
+    .ja__button-inverted:hover{
+        color: var(--text-color) !important;
+        border-color: var(--text-color) !important;
     }
 }

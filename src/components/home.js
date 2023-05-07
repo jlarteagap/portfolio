@@ -28,7 +28,7 @@ const Home = ({ siteTitle }) => {
 
           <div className="is-flex is-justify-content-center">
             <DownloadButton />
-            <a href="#contacto" className="btn button mx-3">
+            <a href="#contacto" className="mx-3 button ja__button-inverted">
               Contacto
             </a>
           </div>
