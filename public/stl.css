@@ -33,6 +33,12 @@
     }
 }
 
+.about__container{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+
 @media (prefers-color-scheme: dark) {
     body, html{
         background: var(--secondary-color);
@@ -42,27 +48,27 @@
         color: var(--text-color) 
     }
     a:hover{
-        color: var(--decorate-color)
+        color: var(--primary-color)
     }
     .nav__link{
-        color: var(--decorate-color) !important;
+        color: var(--text-color) !important;
         transition: all .4s;
     }
     .nav__link:hover{
-        color: var(--text-color) !important;
+        color: var(--primary-color) !important;
     }
     .ja__navbar{
         background-color: var(--secondary-color);
     }
     .ja__buttons{
         background: transparent !important;
-        color: var(--decorate-color) !important;
-        border-color: var(--decorate-color);
+        color: var(--text-color) !important;
+        border-color: var(--text-color);
         transition: all .3s;
     }
     .ja__buttons:hover{
-        border-color: var(--text-color);
-        color: var(--text-color) !important;
+        border-color: var(--primary-color);
+        color: var(--primary-color) !important;
     }
     .ja__button-inverted{
         background-color: transparent !important;
