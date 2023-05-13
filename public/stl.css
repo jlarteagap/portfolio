@@ -4,7 +4,7 @@
 :root{
     --primary-color: rgba(255, 255, 255, 1);
     --secondary-color: rgba(0, 0, 0, 1);
-    --text-color: rgb(216, 216, 216, 1);
+    --text-color: rgb(146, 146, 146);
     --decorate-color: rgb(52, 52, 52);
 }
 .ja__navbar{
@@ -78,5 +78,13 @@
     .ja__button-inverted:hover{
         color: var(--text-color) !important;
         border-color: var(--text-color) !important;
+    }
+    .ja__card{
+        background: transparent !important;
+        border: 1px solid var(--decorate-color) !important;
+        color: var(--decorate-color) !important;
+    }
+    .ja__card-title{
+        color: var(--text-color);
     }
 }

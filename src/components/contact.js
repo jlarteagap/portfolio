@@ -32,8 +32,8 @@ const Contact = () => {
     <section className="contact section" id="contact">
       <span className="section__subtitle">Get in touch</span>
       <h2 className="section__title">Contact me</h2>
-      <div className="contact__container container grid">
-        <div className="contact__content">
+      <div className="columns">
+        <div className="column">
           <h3 className="contact__title">Talk to me</h3>
           <div className="contact__info">
             <div className="contact__card">
@@ -79,41 +79,41 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="contact__content">
+        <div className="column">
           <h3 className="contact__title">Write me your project</h3>
 
           <form ref={form} className="contact__form" onSubmit={sendEmail}>
             <div className="contact__form-div">
-              <label className="contact__form-tag">Names</label>
+              <label className="label">Names</label>
               <input
                 type="text"
                 name="from_name"
-                className="contact__form-input"
+                className="input"
                 placeholder="Insert your names"
               />
             </div>
             <div className="contact__form-div">
-              <label className="contact__form-tag">Mail</label>
+              <label className="label">Mail</label>
               <input
                 type="email"
                 name="reply_to"
                 placeholder="Insert your email"
-                className="contact__form-input"
+                className="input"
               />
             </div>
             <div className="contact__form-div contact__form-area">
-              <label className="contact__form-tag">Project</label>
+              <label className="label">Project</label>
               <textarea
                 name="message"
-                className="contact__form-input"
+                className="input"
                 id=""
                 cols="30"
                 rows="10"
                 placeholder="Write your project"
               ></textarea>
             </div>
-            <button className="button" type="submit">
-              Send Message
+            <button className="button ja__buttons" type="submit">
+              Enviar mensaje
             </button>
           </form>
         </div>
