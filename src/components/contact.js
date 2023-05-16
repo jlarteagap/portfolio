@@ -15,7 +15,7 @@ const Contact = () => {
         'service_98zraxi',
         'template_a34y8wi',
         form.current,
-        'user_0WvNAjKetmDQc67xcne1A'
+        '93BAteTRApolzmkNo'
       )
       .then(
         result => {
@@ -29,52 +29,51 @@ const Contact = () => {
       )
   }
   return (
-    <section className="contact section" id="contact">
-      <span className="section__subtitle">Get in touch</span>
-      <h2 className="section__title">Contact me</h2>
+    <section className="contact container" id="contact">
+      <h2 className="is-size-2 has-text-weight-bold">Contacta conmigo</h2>
       <div className="columns">
         <div className="column">
-          <h3 className="contact__title">Talk to me</h3>
-          <div className="contact__info">
-            <div className="contact__card">
-              <BiMailSend className="contact__card-icon" />
+          <h3 className="is-size-4">Formas de contacto</h3>
+          <div className="is-flex is-justify-content-space-around mt-6">
+            <div className="is-flex is-flex-direction-column is-align-items-center">
+              <BiMailSend />
               <h3 className="contact__card-title">Email</h3>
-              <span className="contact__card-data">
+              <span className="has-text-weight-bold">
                 jorgelarteagap@gmail.com
               </span>
               <a
                 href="mailto:jorgelarteagap@gmail.com"
                 target="_blank"
-                className="contact__button"
+                className="is-flex is-justify-content-center is-align-items-center"
                 rel="noreferrer"
               >
-                Write me <BiRightArrowAlt className="contact__button-icon" />
+                Escríbeme <BiRightArrowAlt />
               </a>
             </div>
-            <div className="contact__card">
-              <BsWhatsapp className="contact__card-icon" />
+            <div className="is-flex is-flex-direction-column is-align-items-center">
+              <BsWhatsapp />
               <h3 className="contact__card-title">WhatsApp</h3>
-              <span className="contact__card-data">+591 77633551</span>
+              <span className="has-text-weight-bold">+591 77633551</span>
               <a
                 href="https://wa.me/59177633551"
                 target="_blank"
-                className="contact__button"
+                className="is-flex is-justify-content-center is-align-items-center"
                 rel="noreferrer"
               >
-                Write me <BiRightArrowAlt className="contact__button-icon" />
+                Escríbeme <BiRightArrowAlt />
               </a>
             </div>
-            <div className="contact__card">
-              <BsTwitter className="contact__card-icon" />
+            <div className="is-flex is-flex-direction-column is-align-items-center">
+              <BsTwitter />
               <h3 className="contact__card-title">Twitter</h3>
-              <span className="contact__card-data">jlarteagap</span>
+              <span className="has-text-weight-bold">jlarteagap</span>
               <a
                 href="http://twitter.com/jlarteagap"
                 target="_blank"
-                className="contact__button"
+                className="is-flex is-justify-content-center is-align-items-center"
                 rel="noreferrer"
               >
-                Write me <BiRightArrowAlt className="contact__button-icon" />
+                Escríbeme <BiRightArrowAlt />
               </a>
             </div>
           </div>
@@ -84,20 +83,20 @@ const Contact = () => {
 
           <form ref={form} className="contact__form" onSubmit={sendEmail}>
             <div className="contact__form-div">
-              <label className="label">Names</label>
+              <label className="label">Nombres</label>
               <input
                 type="text"
                 name="from_name"
                 className="input"
-                placeholder="Insert your names"
+                placeholder="Insertar nombres"
               />
             </div>
             <div className="contact__form-div">
-              <label className="label">Mail</label>
+              <label className="label">Correo electrónico</label>
               <input
                 type="email"
                 name="reply_to"
-                placeholder="Insert your email"
+                placeholder="Insertar un correo"
                 className="input"
               />
             </div>
@@ -109,10 +108,10 @@ const Contact = () => {
                 id=""
                 cols="30"
                 rows="10"
-                placeholder="Write your project"
+                placeholder="Describe tu proyecto"
               ></textarea>
             </div>
-            <button className="button ja__buttons" type="submit">
+            <button className="button ja__buttons mt-4" type="submit">
               Enviar mensaje
             </button>
           </form>
