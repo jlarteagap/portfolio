@@ -29,11 +29,13 @@ const Contact = () => {
       )
   }
   return (
-    <section className="contact container" id="contact">
+    <section className="contact container py-6" id="contacto">
       <h2 className="is-size-2 has-text-weight-bold">Contacta conmigo</h2>
       <div className="columns">
         <div className="column">
-          <h3 className="is-size-4">Formas de contacto</h3>
+          <h3 className="is-size-4">
+            Elije una forma de contactarte directamente
+          </h3>
           <div className="is-flex is-justify-content-space-around mt-6">
             <div className="is-flex is-flex-direction-column is-align-items-center">
               <BiMailSend />
@@ -79,8 +81,6 @@ const Contact = () => {
           </div>
         </div>
         <div className="column">
-          <h3 className="contact__title">Write me your project</h3>
-
           <form ref={form} className="contact__form" onSubmit={sendEmail}>
             <div className="contact__form-div">
               <label className="label">Nombres</label>
@@ -101,13 +101,11 @@ const Contact = () => {
               />
             </div>
             <div className="contact__form-div contact__form-area">
-              <label className="label">Project</label>
+              <label className="label">Mensaje</label>
               <textarea
                 name="message"
                 className="input"
                 id=""
-                cols="30"
-                rows="10"
                 placeholder="Describe tu proyecto"
               ></textarea>
             </div>

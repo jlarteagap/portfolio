@@ -1,24 +1,20 @@
 import React from 'react'
-import { BiUser, BiBook, BiBriefcase, BiMessageSquare } from 'react-icons/bi'
+import { BiUser, BiBook, BiMessageSquare } from 'react-icons/bi'
 
 export const Navbar = () => {
   return (
     <div className="ml-6 is-flex">
-      <a href="#about" className="nav__link navbar-item">
+      <a href="#acerca-de-mi" className="nav__link navbar-item">
         <BiUser />
-        <span className="pl-3">About</span>
+        <span className="pl-3">Acerca de mi</span>
       </a>
 
-      <a href="#skills" className="nav__link navbar-item">
-        <BiBook /> <span className="pl-3">Skills</span>
+      <a href="#experiencia" className="nav__link navbar-item">
+        <BiBook /> <span className="pl-3">Experiencia</span>
       </a>
 
-      <a href="#work" className="nav__link navbar-item">
-        <BiBriefcase /> <span className="pl-3">Portfolio</span>
-      </a>
-
-      <a href="#contact" className="nav__link navbar-item">
-        <BiMessageSquare /> <span className="pl-3">Contact</span>
+      <a href="#contacto" className="nav__link navbar-item">
+        <BiMessageSquare /> <span className="pl-3">Contacto</span>
       </a>
     </div>
   )

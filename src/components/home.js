@@ -9,7 +9,7 @@ const Home = ({ siteTitle }) => {
       <section className="is-flex is-justify-content-center is-flex-direction-column is-align-items-center container home__section pb-6">
         <figure className="image is-128x128">
           <Image
-            src="/images/perfil.png"
+            src="/images/ja.png"
             className="is-rounded"
             alt="Jorge Luis Arteaga"
             width="400"
