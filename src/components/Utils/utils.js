@@ -5,7 +5,7 @@ export const DownloadButton = () => {
   return (
     <a
       download
-      href="../assets/pdf/jorge-arteaga-eng.pdf"
+      href="../assets/pdf/jorge-luis-arteaga-cv.pdf"
       className="button is-size-7-mobile ja__buttons"
     >
       <BiDownload className="mr-2" />
