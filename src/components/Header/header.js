@@ -11,26 +11,28 @@ const Header = ({ siteTitle }) => {
   return (
     <div className={`header ${isScrolled ? 'scroll-header' : ''}`} id="header">
       <nav
-        className="navbar is-fixed-top nav container is-flex-mobile is-justify-content-space-between ja__navbar"
+        className="navbar is-fixed-top nav is-flex-mobile is-justify-content-space-between ja__navbar"
         role="navigation"
         aria-label="main navigation"
       >
-        <div className="navbar-brand">
-          <h1 className="navbar-item">
-            <a>Jorge Luis Artega</a>
-          </h1>
-        </div>
-        <div className="navbar-menu">
-          <div className="navbar-start">
-            <Navbar />
+        <div className="container">
+          <div className="navbar-brand">
+            <h1 className="navbar-item">
+              <a>Jorge Luis Artega</a>
+            </h1>
           </div>
-        </div>
-        <div className="navbar-end is-flex-mobile is-align-items-center">
-          <div className="navbar-item px-2">
-            <DownloadButton />
+          <div className="navbar-menu">
+            <div className="navbar-start">
+              <Navbar />
+            </div>
           </div>
-          <div className="navbar-item">
-            <DarkMode />
+          <div className="navbar-end is-flex-mobile is-align-items-center">
+            <div className="navbar-item px-2">
+              <DownloadButton />
+            </div>
+            <div className="navbar-item">
+              <DarkMode />
+            </div>
           </div>
         </div>
       </nav>

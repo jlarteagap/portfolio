@@ -7,6 +7,9 @@
     --text-color: rgb(146, 146, 146);
     --decorate-color: rgb(52, 52, 52);
 }
+a{
+    color: var(--decorate-color);
+}
 .ja__navbar{
     background-color: var(--primary-color);
 }
