@@ -20,18 +20,6 @@ const About = () => {
             Soy Frontend Developer con 10 años de experiencia en prototipado,
             creando diseños atractivos y funcionales.
           </h4>
-          <p className="is-size-5 mb-5">
-            Currently,I am working on ReactJs, applying my skills in creating
-            Templates for Wordpress. I love learning and trying new
-            technologies, and I am interested in finding opportunities that
-            allow me to continue developing my skills and knowledge.
-          </p>
-          <p className="is-size-5">
-            If you are looking for a Frontend Developer with experience in
-            prototyping and design, do not hesitate to contact me. I am willing
-            to work on interesting and challenging projects that allow me to
-            continue growing as a professional.
-          </p>
         </div>
       </div>
     </section>
