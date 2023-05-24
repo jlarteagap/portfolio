@@ -41,7 +41,12 @@ a{
     color: var(--secondary-color);
 }
 
-
+@media screen and (max-width: 480px){
+    .contact__data{
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
 @media (prefers-color-scheme: dark) {
     body, html{
         background: var(--secondary-color);

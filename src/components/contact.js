@@ -30,13 +30,15 @@ const Contact = () => {
   }
   return (
     <section className="contact container py-6" id="contacto">
-      <h2 className="is-size-2 has-text-weight-bold">Contacta conmigo</h2>
+      <h2 className="is-size-2 has-text-weight-bold is-size-4-mobile">
+        Contacta conmigo
+      </h2>
       <div className="columns">
         <div className="column">
-          <h3 className="is-size-4">
+          <h3 className="is-size-4 is-size-6-mobile">
             Elije una forma de contactarte directamente
           </h3>
-          <div className="is-flex is-justify-content-space-around mt-6">
+          <div className="is-flex is-justify-content-space-around mt-6 contact__data">
             <div className="is-flex is-flex-direction-column is-align-items-center">
               <BiMailSend />
               <h3 className="contact__card-title">Email</h3>
