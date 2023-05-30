@@ -1,6 +1,7 @@
 import React, { useRef } from 'react'
 import { BiRightArrowAlt, BiMailSend } from 'react-icons/bi'
 import { BsTwitter, BsWhatsapp } from 'react-icons/bs'
+import { SocialMedia } from './SocialMedia'
 // import APIKEY from '../../config/ApiKey'
 import emailjs from '@emailjs/browser'
 
@@ -81,6 +82,7 @@ const Contact = () => {
               </a>
             </div>
           </div>
+          <SocialMedia />
         </div>
         <div className="column">
           <form ref={form} className="contact__form" onSubmit={sendEmail}>

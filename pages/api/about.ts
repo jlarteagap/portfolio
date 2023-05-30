@@ -6,7 +6,35 @@ const apiAbout = (req: NextApiRequest, res: NextApiResponse) => {
       github: 'https://github.com/jlarteagap',
       linkedin: 'https://www.linkedin.com/in/jorge-luis-arteaga-perez/',
       twitter: 'https://twitter.com/jlarteagap'
-    }
+    },
+    contact: {
+      email: 'jorgelarteagap@gmail.com',
+      phone: '77633551'
+    },
+    experience: [
+      {
+        name: 'work 1',
+        web: 'http://google.com',
+        description: 'lorem',
+        projects: [
+          {
+            name: 'project 1',
+            url: 'http://google.com'
+          }
+        ]
+      },
+      {
+        name: 'work 2',
+        web: 'http://google.com',
+        description: 'lorem',
+        projects: [
+          {
+            name: 'project 2',
+            url: 'http://google.com'
+          }
+        ]
+      }
+    ]
   })
 }
 
