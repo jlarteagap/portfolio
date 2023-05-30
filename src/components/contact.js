@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
 import { BiRightArrowAlt, BiMailSend } from 'react-icons/bi'
-import { BsTwitter, BsWhatsapp } from 'react-icons/bs'
+import { BsWhatsapp } from 'react-icons/bs'
 import { SocialMedia } from './SocialMedia'
 // import APIKEY from '../../config/ApiKey'
 import emailjs from '@emailjs/browser'
@@ -61,19 +61,6 @@ const Contact = () => {
               <span className="has-text-weight-bold">+591 77633551</span>
               <a
                 href="https://wa.me/59177633551"
-                target="_blank"
-                className="is-flex is-justify-content-center is-align-items-center"
-                rel="noreferrer"
-              >
-                Escríbeme <BiRightArrowAlt />
-              </a>
-            </div>
-            <div className="is-flex is-flex-direction-column is-align-items-center">
-              <BsTwitter />
-              <h3 className="contact__card-title">Twitter</h3>
-              <span className="has-text-weight-bold">jlarteagap</span>
-              <a
-                href="http://twitter.com/jlarteagap"
                 target="_blank"
                 className="is-flex is-justify-content-center is-align-items-center"
                 rel="noreferrer"

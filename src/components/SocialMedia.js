@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import { FaLinkedin } from 'react-icons/fa'
+import { FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa'
 export const SocialMedia = () => {
-  const [icons, setIcons] = useState(null)
+  const [icons, setIcons] = useState([])
   useEffect(() => {
     fetch('/api/about')
       .then(res => res.json())
@@ -10,13 +10,31 @@ export const SocialMedia = () => {
       })
   }, [])
 
-  console.log(icons)
+  const iconComponents = {
+    linkedin: <FaLinkedin size={24} />,
+    github: <FaGithub size={24} />,
+    twitter: <FaTwitter size={24} />
+  }
   return (
-    <>
+    <div
+      className="is-flex mt-6 is-justify-content-center"
+      style={{ gap: '1rem' }}
+    >
       {icons.map(icon => {
-        return <>hola</>
+        return (
+          <div key={icon.name}>
+            <a
+              href={icon.url}
+              className="is-flex is-flex-direction-column is-align-items-center"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {iconComponents[icon.name.toLowerCase()]}
+              {icon.name}
+            </a>
+          </div>
+        )
       })}
-      <FaLinkedin />
-    </>
+    </div>
   )
 }
