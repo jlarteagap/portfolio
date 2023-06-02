@@ -1,7 +1,7 @@
 import React, { useRef } from 'react'
 import { BiRightArrowAlt, BiMailSend } from 'react-icons/bi'
 import { BsWhatsapp } from 'react-icons/bs'
-import { SocialMedia } from './SocialMedia'
+import SocialMedia from './SocialMedia'
 // import APIKEY from '../../config/ApiKey'
 import emailjs from '@emailjs/browser'
 

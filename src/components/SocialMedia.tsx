@@ -1,15 +1,14 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa'
-export const SocialMedia = () => {
-  const [icons, setIcons] = useState([])
-  useEffect(() => {
-    fetch('/api/about')
-      .then(res => res.json())
-      .then(({ social }) => {
-        setIcons(social)
-      })
-  }, [])
 
+export const getServerSideProps = async () => {
+  const res = await fetch('https://jlarteaga.com/api/about/')
+  const { social } = await res.json()
+  return {
+    props: { social }
+  }
+}
+const SocialMedia = ({ social }) => {
   const iconComponents = {
     linkedin: <FaLinkedin size={24} />,
     github: <FaGithub size={24} />,
@@ -20,7 +19,7 @@ export const SocialMedia = () => {
       className="is-flex mt-6 is-justify-content-center"
       style={{ gap: '1rem' }}
     >
-      {icons.map(icon => {
+      {social.map(icon => {
         return (
           <div key={icon.name}>
             <a
@@ -38,3 +37,5 @@ export const SocialMedia = () => {
     </div>
   )
 }
+
+export default SocialMedia
