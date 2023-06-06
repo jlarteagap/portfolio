@@ -11,7 +11,7 @@ import SEO from '../src/components/seo/Seo'
 import { Experience } from '../src/components/Experience'
 
 export const getServerSideProps = async () => {
-  const res = await fetch('http://localhost:3000/api/about')
+  const res = await fetch('https://jlarteaga.com/api/about')
   const { social, contact, data, about, experience } = await res.json()
   return {
     props: { social, contact, data, about, experience }
