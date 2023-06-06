@@ -4,6 +4,7 @@ import { DownloadButton } from './Utils/utils'
 import Image from 'next/image'
 
 const Home = ({ siteTitle }) => {
+  console.log(siteTitle)
   return (
     <>
       <section className="is-flex is-justify-content-center is-flex-direction-column is-align-items-center container home__section pb-6">
@@ -11,19 +12,19 @@ const Home = ({ siteTitle }) => {
           <Image
             src="/images/ja.png"
             className="is-rounded"
-            alt="Jorge Luis Arteaga"
+            alt={siteTitle.name}
             width="400"
             height="300"
           />
         </figure>
         <div className="has-text-centered">
           <h2 className="mt-4 has-text-weight-bold is-size-3 is-uppercase">
-            {siteTitle}
+            {siteTitle.name}
           </h2>
-          <p>Frontend & React Developer</p>
+          <p>{siteTitle.description}</p>
 
           <h3 className="is-size-1 is-size-4-mobile my-6  p-2 has-text-weight-semibold home__phrase headings__titles">
-            Desarrollo productos, soluciones y experiencias digitales
+            {siteTitle.slogan}
           </h3>
 
           <div className="is-flex is-justify-content-center">

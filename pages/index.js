@@ -11,27 +11,26 @@ import SEO from '../src/components/seo/Seo'
 import { Experience } from '../src/components/Experience'
 
 export const getServerSideProps = async () => {
-  const res = await fetch('https://jlarteaga.com/api/about')
-  const { social } = await res.json()
-
+  const res = await fetch('http://localhost:3000/api/about')
+  const { social, contact, data, about, experience } = await res.json()
   return {
-    props: { social }
+    props: { social, contact, data, about, experience }
   }
 }
 
-const index = ({ social }) => {
+const index = ({ social, contact, data, about, experience }) => {
   return (
     <>
-      <SEO title="Frontend Developer" siteTitle="Jorge Luis Arteaga" />
-      <Home siteTitle="Jorge Arteaga" />
-      <About />
-      <Experience />
+      <SEO title={data.description} siteTitle={data.name} />
+      <Home siteTitle={data} />
+      <About about={about} />
+      <Experience experience={experience} />
       {/* <Skills />
       <Services />
       <Work />
       <BlogList />
        */}
-      <Contact social={social} />
+      <Contact social={social} contact={contact} />
     </>
   )
 }
