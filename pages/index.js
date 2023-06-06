@@ -10,7 +10,16 @@ import Contact from '../src/components/contact'
 import SEO from '../src/components/seo/Seo'
 import { Experience } from '../src/components/Experience'
 
-const index = () => {
+export const getServerSideProps = async () => {
+  const res = await fetch('https://jlarteaga.com/api/about')
+  const { social } = await res.json()
+
+  return {
+    props: { social }
+  }
+}
+
+const index = ({ social }) => {
   return (
     <>
       <SEO title="Frontend Developer" siteTitle="Jorge Luis Arteaga" />
@@ -22,7 +31,7 @@ const index = () => {
       <Work />
       <BlogList />
        */}
-      <Contact />
+      <Contact social={social} />
     </>
   )
 }

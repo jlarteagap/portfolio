@@ -1,13 +1,6 @@
 import React from 'react'
 import { FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa'
-import fetch from 'isomorphic-unfetch'
-export const getServerSideProps = async () => {
-  const res = await fetch('https://jlarteaga.com/api/about/')
-  const { social } = await res.json()
-  return {
-    props: { social }
-  }
-}
+
 const SocialMedia = ({ social }) => {
   const iconComponents = {
     linkedin: <FaLinkedin size={24} />,

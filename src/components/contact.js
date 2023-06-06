@@ -5,7 +5,7 @@ import SocialMedia from './SocialMedia'
 // import APIKEY from '../../config/ApiKey'
 import emailjs from '@emailjs/browser'
 
-const Contact = () => {
+const Contact = ({ social }) => {
   const form = useRef()
 
   const sendEmail = e => {
@@ -69,7 +69,7 @@ const Contact = () => {
               </a>
             </div>
           </div>
-          <SocialMedia />
+          <SocialMedia social={social} />
         </div>
         <div className="column">
           <form ref={form} className="contact__form" onSubmit={sendEmail}>
