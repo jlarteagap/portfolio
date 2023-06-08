@@ -39,8 +39,12 @@ a{
 .about__container{
     background-color: var(--primary-color);
     color: var(--secondary-color);
+    padding: 1rem;
 }
 
+.about__text{
+    width: 50%;
+}
 @media screen and (max-width: 480px){
     .contact__data{
         flex-direction: column;
@@ -73,6 +77,7 @@ a{
         color: var(--text-color) !important;
         border-color: var(--text-color);
         transition: all .3s;
+        font-size: 1rem !important;
     }
     .ja__buttons:hover{
         border-color: var(--primary-color);
@@ -94,5 +99,8 @@ a{
     }
     .ja__card-title{
         color: var(--text-color);
+    }
+    .about__text{
+        width: 100%;
     }
 }

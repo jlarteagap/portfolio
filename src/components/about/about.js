@@ -10,7 +10,7 @@ const About = ({ about }) => {
           style={{ lineHeight: 1 }}
           dangerouslySetInnerHTML={{ __html: about.hero }}
         ></h2>
-        <div className="m-auto py-6" style={{ width: '50%' }}>
+        <div className="m-auto py-6 about__text">
           <h3 className="is-size-4 has-text-weight-medium">{about.title}</h3>
           <h4
             className="is-size-2 has-text-weight-light my-5 is-size-5-mobile"

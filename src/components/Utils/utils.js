@@ -9,7 +9,9 @@ export const DownloadButton = () => {
       className="button is-size-7-mobile ja__buttons"
     >
       <BiDownload className="mr-2" />
-      <span className="is-hidden-mobile mr-1">Download</span> CV
+      <div>
+        <span className="is-hidden-mobile mr-1">Download</span> CV
+      </div>
     </a>
   )
 }
