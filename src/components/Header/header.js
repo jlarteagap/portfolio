@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 
-import DarkMode from '../darkmode'
 import { Navbar } from './navbar'
 import { DownloadButton } from '../Utils/utils'
 
@@ -16,9 +15,7 @@ const Header = ({ siteTitle }) => {
         aria-label="main navigation"
       >
         <div className="navbar-brand">
-          <h1 className="navbar-item">
-            <a>Jorge Luis Artega</a>
-          </h1>
+          <h1 className="navbar-item">{siteTitle}</h1>
         </div>
         <div className="navbar-menu">
           <div className="navbar-start">
@@ -28,9 +25,6 @@ const Header = ({ siteTitle }) => {
         <div className="navbar-end is-flex-mobile is-align-items-center">
           <div className="navbar-item px-2">
             <DownloadButton />
-          </div>
-          <div className="navbar-item">
-            <DarkMode />
           </div>
         </div>
       </nav>
