@@ -10,7 +10,7 @@ const Home = ({ siteTitle }) => {
       <section className="is-flex is-justify-content-center is-flex-direction-column is-align-items-center container home__section pb-6">
         <figure className="image is-128x128">
           <Image
-            src="/images/ja.png"
+            src="/images/ja.webp"
             className="is-rounded"
             alt={siteTitle.name}
             width="400"
