@@ -4,7 +4,9 @@ const apiAbout = (req: NextApiRequest, res: NextApiResponse) => {
   return res.status(200).json({
     data: {
       name: 'Jorge Luis Arteaga',
-      description: 'Frontend Developer',
+      carrer: 'Frontend Developer',
+      description:
+        'Soy Frontend Developer con 10 años de experiencia en prototipado, creando diseños atractivos y funcionales.',
       slogan: 'Desarrollo productos, soluciones y experiencias digitales'
     },
     about: {

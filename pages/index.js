@@ -21,7 +21,11 @@ export const getServerSideProps = async () => {
 const index = ({ social, contact, data, about, experience }) => {
   return (
     <>
-      <SEO title={data.description} siteTitle={data.name} />
+      <SEO
+        title={data.carrer}
+        siteTitle={data.name}
+        description={data.description}
+      />
       <Home siteTitle={data} />
       <About about={about} />
       <Experience experience={experience} />
