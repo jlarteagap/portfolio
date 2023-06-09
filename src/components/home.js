@@ -4,7 +4,6 @@ import { DownloadButton } from './Utils/utils'
 import Image from 'next/image'
 
 const Home = ({ siteTitle }) => {
-  console.log(siteTitle)
   return (
     <>
       <section className="is-flex is-justify-content-center is-flex-direction-column is-align-items-center container home__section pb-6">
