@@ -8,7 +8,7 @@ import About from '../src/components/about'
 import Contact from '../src/components/contact'
 // import BlogList from '../src/components/blog/BlogList'
 import SEO from '../src/components/seo/Seo'
-import { Experience } from '../src/components/Experience'
+import { Experience } from '../src/components/experience'
 
 export const getServerSideProps = async () => {
   const res = await fetch('http://localhost:3000/api/about')

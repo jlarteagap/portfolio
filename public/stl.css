@@ -29,6 +29,9 @@ a{
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
 }
+.about-data{
+    width: 50%;
+}
 
 @media screen and(max-width: 480px) {
     .home__section{
@@ -45,6 +48,9 @@ a{
     .contact__data{
         flex-direction: column;
         gap: 1rem;
+    }
+    .about-data{
+        width: 80%;
     }
 }
 @media (prefers-color-scheme: dark) {
