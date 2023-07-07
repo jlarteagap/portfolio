@@ -4,9 +4,9 @@ import { ExperienceCard } from './ExperienceCard'
 
 export const Experience = ({ experience }) => {
   return (
-    <section className="container py-6" id="experiencia">
+    <section className="container py-6 px-3" id="experiencia">
       <h2 className="is-size-1 my-6 has-text-weight-bold">Experiencia</h2>
-      <div className="columns is-4 is-3 px-2" style={{ gap: '1.5rem' }}>
+      <div className="columns is-desktop" style={{ gap: '1.5rem' }}>
         {experience.map(job => {
           return <ExperienceCard key={job.name} job={job} />
         })}

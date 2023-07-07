@@ -83,7 +83,7 @@ const apiAbout = (req: NextApiRequest, res: NextApiResponse) => {
         frontend: [
           'JavaScript/ES6',
           'React',
-          'HTML / ACCESSIBILITY',
+          'HTML',
           'CSS / SASS',
           'NextJS',
           'Headless CMS',

@@ -44,6 +44,16 @@ a{
     color: var(--secondary-color);
 }
 
+.skills__title{
+	font-size: 10rem;
+}
+.outlinetext{
+    color: var(--secondary-color);
+	text-shadow: -1px 1px 0 var(--primary-color),
+				  1px 1px 0 var(--primary-color),
+				 1px -1px 0 var(--primary-color),
+				-1px -1px 0 var(--primary-color);
+}
 @media screen and (max-width: 480px){
     .contact__data{
         flex-direction: column;
@@ -52,16 +62,12 @@ a{
     .about-data{
         width: 80%;
     }
+    .skills__title{
+        font-size: 4rem;
+    }
 }
 
-.skills__title{
-	color: var(--secondary-color);
-	font-size: 10rem;
-	text-shadow: -1px 1px 0 var(--primary-color),
-				  1px 1px 0 var(--primary-color),
-				 1px -1px 0 var(--primary-color),
-				-1px -1px 0 var(--primary-color);
-}
+
 @media (prefers-color-scheme: dark) {
     body, html{
         background: var(--secondary-color);
