@@ -79,6 +79,32 @@ const apiAbout = (req: NextApiRequest, res: NextApiResponse) => {
           }
         ]
       }
+    ],
+    skills: [
+      {
+        frontend: [
+          'JavaScript/ES6',
+          'React',
+          'HTML',
+          'CSS / SASS',
+          'NextJS',
+          'Headless CMS',
+          'REST API',
+          'GraphQL',
+          'Bootstrap',
+          'Bulma CSS'
+        ],
+        backend: ['Node Js', 'Mongo DB', 'Django'],
+        tools: [
+          'Figma',
+          'Photoshop',
+          'Ilustrator',
+          'iTerm',
+          'VsCode',
+          'Adobe Premier',
+          'After Effect'
+        ]
+      }
     ]
   })
 }

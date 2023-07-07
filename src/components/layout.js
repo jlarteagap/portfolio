@@ -8,7 +8,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Header siteTitle={'Jorge Arteaga'} />
-      <main className="mx-3">{children}</main>
+      <main>{children}</main>
       {/* <Footer siteTitle={'Jorge Arteaga'} /> */}
     </>
   )
