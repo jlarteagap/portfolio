@@ -14,19 +14,17 @@ const Header = ({ siteTitle }) => {
         role="navigation"
         aria-label="main navigation"
       >
-        <div className="container">
-          <div className="navbar-brand">
-            <h1 className="navbar-item">{siteTitle}</h1>
+        <div className="navbar-brand">
+          <h1 className="navbar-item">{siteTitle}</h1>
+        </div>
+        <div className="navbar-menu">
+          <div className="navbar-start">
+            <Navbar />
           </div>
-          <div className="navbar-menu">
-            <div className="navbar-start">
-              <Navbar />
-            </div>
-          </div>
-          <div className="navbar-end is-flex-mobile is-align-items-center">
-            <div className="navbar-item px-2">
-              <DownloadButton />
-            </div>
+        </div>
+        <div className="navbar-end is-flex-mobile is-align-items-center">
+          <div className="navbar-item px-2">
+            <DownloadButton />
           </div>
         </div>
       </nav>

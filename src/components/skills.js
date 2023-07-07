@@ -6,7 +6,7 @@ const Skills = ({ skills }) => {
       className=""
       style={{ backgroundColor: '#000', padding: '6rem 0' }}
     >
-      <div className="container mx-3">
+      <div className="container">
         <div className="columns is-desktop">
           <div className="column">
             <h2 className="my-6 has-text-weight-bold skills__title outlinetext">
@@ -24,7 +24,12 @@ const Skills = ({ skills }) => {
             })}
           </div>
           <div className="column">
-            <h2 className="my-6 has-text-weight-bold is-size-1">Backend</h2>
+            <h2
+              className="my-6 has-text-weight-bold is-size-1"
+              style={{ color: 'white' }}
+            >
+              Backend
+            </h2>
             {skills[0].backend.map((skill, i) => {
               return (
                 <div key={i} className="button is-link is-outlined mr-4 mt-4">
@@ -32,7 +37,10 @@ const Skills = ({ skills }) => {
                 </div>
               )
             })}
-            <h2 className="my-6 has-text-weight-bold is-size-2">
+            <h2
+              className="my-6 has-text-weight-bold is-size-2"
+              style={{ color: 'white' }}
+            >
               Herramientas
             </h2>
             <div>

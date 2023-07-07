@@ -17,12 +17,12 @@ const Home = ({ siteTitle }) => {
           />
         </figure>
         <div className="has-text-centered">
-          <h2 className="mt-4 has-text-weight-bold is-size-3 is-uppercase">
+          <h2 className="mt-4 has-text-weight-bold is-size-1 is-uppercase">
             {siteTitle.name}
           </h2>
           <p>{siteTitle.description}</p>
 
-          <h3 className="is-size-1 is-size-4-mobile my-6  p-2 has-text-weight-semibold home__phrase headings__titles">
+          <h3 className="is-size-3 is-size-4-mobile my-6  p-2 has-text-weight-semibold home__phrase">
             {siteTitle.slogan}
           </h3>
 

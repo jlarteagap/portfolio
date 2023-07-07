@@ -10,6 +10,7 @@ export const ExperienceCard = ({ job }) => {
             <Image
               width="48"
               height="48"
+              alt={job.name}
               src={job.logo}
               style={{ borderRadius: '5px' }}
             />
