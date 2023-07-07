@@ -53,6 +53,15 @@ a{
         width: 80%;
     }
 }
+
+.skills__title{
+	color: var(--secondary-color);
+	font-size: 10rem;
+	text-shadow: -1px 1px 0 var(--primary-color),
+				  1px 1px 0 var(--primary-color),
+				 1px -1px 0 var(--primary-color),
+				-1px -1px 0 var(--primary-color);
+}
 @media (prefers-color-scheme: dark) {
     body, html{
         background: var(--secondary-color);

@@ -7,7 +7,6 @@ import SocialMedia from './SocialMedia'
 import { EmailForm } from './EmailForm'
 
 const Contact = ({ social, contact }) => {
-  console.log(contact)
   return (
     <section className="contact container py-6" id="contacto">
       <h2 className="is-size-2 has-text-weight-bold is-size-4-mobile">

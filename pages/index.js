@@ -2,7 +2,7 @@ import * as React from 'react'
 
 import Home from '../src/components/home'
 import About from '../src/components/about'
-// import Skills from '../src/components/skills'
+import Skills from '../src/components/skills'
 // import Services from '../src/components/services'
 // import Work from '../src/components/work'
 import Contact from '../src/components/contact'
@@ -12,18 +12,19 @@ import { Experience } from '../src/components/experience'
 
 export const getServerSideProps = async () => {
   const res = await fetch('http://localhost:3000/api/about')
-  const { social, contact, data, about, experience } = await res.json()
+  const { social, contact, data, about, experience, skills } = await res.json()
   return {
-    props: { social, contact, data, about, experience }
+    props: { social, contact, data, about, experience, skills }
   }
 }
 
-const index = ({ social, contact, data, about, experience }) => {
+const index = ({ social, contact, data, about, experience, skills }) => {
   return (
     <>
       <SEO title={data.description} siteTitle={data.name} />
       <Home siteTitle={data} />
       <About about={about} />
+      <Skills skills={skills} />
       <Experience experience={experience} />
       {/* <Skills />
       <Services />
