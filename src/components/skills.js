@@ -32,7 +32,10 @@ const Skills = ({ skills }) => {
             </h2>
             {skills[0].backend.map((skill, i) => {
               return (
-                <div key={i} className="button is-link is-outlined mr-4 mt-4">
+                <div
+                  key={i}
+                  className="button is-warning is-outlined mr-4 mt-4"
+                >
                   {skill}
                 </div>
               )

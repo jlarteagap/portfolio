@@ -30,10 +30,10 @@ const index = ({ social, contact, data, about, experience, skills }) => {
       <About about={about} />
       <Skills skills={skills} />
       <Experience experience={experience} />
+      {/* <BlogList /> */}
       {/* <Skills />
       <Services />
       <Work />
-      <BlogList />
        */}
       <Contact social={social} contact={contact} />
     </>

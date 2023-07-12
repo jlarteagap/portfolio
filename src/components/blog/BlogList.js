@@ -12,39 +12,45 @@ export default function BlogList() {
       })
   }, [])
   return (
-    <section className="work section" id="blog">
-      <span className="section__subtitle">My Blog</span>
-      <h2 className="section__title">Recent Posts</h2>
-      <div className="work__container container grid">
+    <section className="container" id="blog">
+      <span className="is-size-1">My Blog</span>
+      <h2 className="is-size-3">Recent Posts</h2>
+      <div className="columns">
         {blog.map((item, index) => {
           const { title, link } = item
           return (
-            <div className="work__card mix web" key={index}>
-              <div className="work__img">
-                <a
-                  className="blog__link"
-                  href={link}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img
-                    src={item._embedded['wp:featuredmedia'][0].source_url}
-                    alt="blog"
-                    className="blog__img"
-                    loading="lazy"
-                  />
-                </a>
+            <div className="column" key={index}>
+              <div className="card">
+                <div className="card-image">
+                  <a
+                    className="blog__link"
+                    href={link}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <figure className="image is-4by3">
+                      <img
+                        src={item._embedded['wp:featuredmedia'][0].source_url}
+                        alt="Placeholder image"
+                      />
+                    </figure>
+                  </a>
+                </div>
+                <div className="card-content">
+                  <div className="content">
+                    <h3 className="blog__title">
+                      <a
+                        className="blog__link"
+                        href={link}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        {title.rendered}
+                      </a>
+                    </h3>
+                  </div>
+                </div>
               </div>
-              <h3 className="blog__title">
-                <a
-                  className="blog__link"
-                  href={link}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  {title.rendered}
-                </a>
-              </h3>
             </div>
           )
         })}
