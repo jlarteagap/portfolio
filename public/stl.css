@@ -1,6 +1,6 @@
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
-@import 'animate.css';
+
 :root{
     --primary-color: rgba(255, 255, 255, 1);
     --secondary-color: rgba(0, 0, 0, 1);
@@ -71,6 +71,10 @@ a{
     }
     .about__text{
         width: 100%;
+    }
+    .about__container__column{
+        flex-direction: column;
+
     }
 }
 
