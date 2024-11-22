@@ -9,6 +9,7 @@ const apiAbout = (req: NextApiRequest, res: NextApiResponse) => {
         'Soy Frontend Developer con 10 años de experiencia en prototipado, creando diseños atractivos y funcionales.',
       slogan: 'Desarrollo productos, soluciones y experiencias digitales'
     },
+
     about: {
       title: 'Acerca de mi',
       hero: 'Crear <br /> productos <br /> simples y elegantes',
@@ -41,7 +42,7 @@ const apiAbout = (req: NextApiRequest, res: NextApiResponse) => {
         web: 'https://digicorp.com.bo',
         logo: '/images/experiencie/digicorp.jpeg',
         description:
-          'Digicorp es una empresa distrubuidora mayorista de productos de video vigilangia y redes en Bolivia, con sucursales en Chile y Perú. Mi trabajo fué ayudar al equipo de marketing a adminsitrar y controlar: banners, cursos, webinars y actualizar productos desde un panel de administración con JavaScript / HTML.',
+          'Es una empresa mayorista especializada en productos de videovigilancia y redes, con operaciones en Bolivia y sucursales en Chile y Perú. Mi labor consistió en apoyar al equipo de marketing en la administración y control de contenido digital, incluyendo banners, cursos, webinars, y la actualización de productos a través de un panel de administración desarrollado con JavaScript y HTML.',
         projects: [
           {
             name: 'project 1',
@@ -54,7 +55,7 @@ const apiAbout = (req: NextApiRequest, res: NextApiResponse) => {
         web: 'www.workcore.net',
         logo: '/images/experiencie/workcore.jpeg',
         description:
-          'Workcore es un sistema de administración de recursos empresariales "ERP" en el que desarrolle diferentes template/ plantillas en ReactJs para diferentes empresas.',
+          'Un sistema de gestión de recursos empresariales (ERP) en el que contribuí al diseño y desarrollo de diversas plantillas en ReactJS, adaptadas a las necesidades específicas de diferentes empresas.',
         projects: [
           {
             name: 'Air.com.bo',
@@ -71,7 +72,7 @@ const apiAbout = (req: NextApiRequest, res: NextApiResponse) => {
         web: 'www.multipago.com',
         logo: '/images/experiencie/ticketeg.jpeg',
         description:
-          'Ticketeg es una empresa de control de entradas y Multipago su pasarela de pago. Desarrollé diferentes landing page y web page en HTML/CSS/JS y ReactJs para diferentes eventos que contrataban los servicios.',
+          'Ticketeg es una plataforma de control de entradas, y Multipago, su pasarela de pago asociada. Participé en la creación de landing pages y páginas web para diversos eventos que contrataron sus servicios, empleando tecnologías como HTML, CSS, JavaScript y ReactJS.',
         projects: [
           {
             name: 'Celina',
@@ -88,7 +89,7 @@ const apiAbout = (req: NextApiRequest, res: NextApiResponse) => {
           'HTML',
           'CSS / SASS',
           'NextJS',
-          'Headless CMS',
+          'Astro Js',
           'REST API',
           'GraphQL',
           'Bootstrap',
@@ -105,7 +106,10 @@ const apiAbout = (req: NextApiRequest, res: NextApiResponse) => {
           'After Effect'
         ]
       }
-    ]
+    ],
+    lastP: {
+      name: 'hola'
+    }
   })
 }
 
