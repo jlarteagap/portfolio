@@ -13,11 +13,10 @@ import Projects from '../src/components/Projects'
 export const getServerSideProps = async () => {
   const res = await fetch('https://jlarteaga.com/api/about')
 
-  const { social, contact, data, about, experience, skills, projects } =
-    await res.json()
+  const { social, contact, data, about, experience, skills } = await res.json()
 
   return {
-    props: { social, contact, data, about, experience, skills, projects }
+    props: { social, contact, data, about, experience, skills }
   }
 }
 
@@ -40,7 +39,7 @@ const index = ({
       <Home siteTitle={data} />
       <About about={about} />
       <Experience experience={experience} />
-      <Projects projects={projects} />
+      <Projects />
       <Skills skills={skills} />
       <Contact social={social} contact={contact} />
     </>

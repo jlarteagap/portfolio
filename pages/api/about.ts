@@ -9,7 +9,6 @@ const apiAbout = (req: NextApiRequest, res: NextApiResponse) => {
         'Soy Frontend Developer con 10 años de experiencia en prototipado, creando diseños atractivos y funcionales.',
       slogan: 'Desarrollo productos, soluciones y experiencias digitales'
     },
-
     about: {
       title: 'Acerca de mi',
       hero: 'Crear <br /> productos <br /> simples y elegantes',
@@ -107,9 +106,21 @@ const apiAbout = (req: NextApiRequest, res: NextApiResponse) => {
         ]
       }
     ],
-    lastP: {
-      name: 'hola'
-    }
+    projects: [
+      {
+        name: 'Danzacruz',
+        description: '',
+        img: '',
+        technology: [
+          'NextJs',
+          'Firebase',
+          'Tailwind',
+          'Formik',
+          'Shadcn',
+          'TypeScript'
+        ]
+      }
+    ]
   })
 }
 
