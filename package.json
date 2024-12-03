@@ -2,8 +2,8 @@
   "name": "jorge-arteaga-portfolio",
   "private": true,
   "description": "Simple portfolio of Jorge Arteaga",
-  "version": "0.3.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "version": "0.3.1",
+  "author": "Jorge Arteaga <jorgelarteagap@gmail.com>",
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "animate.css": "^4.1.1",
