@@ -8,7 +8,7 @@ import Contact from '../src/components/contact/contact'
 // import BlogList from '../src/components/blog/BlogList'
 import SEO from '../src/components/seo/Seo'
 import { Experience } from '../src/components/experience'
-import Projects from '../src/components/Projects'
+import Projects from '../src/components/projects'
 
 export const getServerSideProps = async () => {
   const res = await fetch('https://jlarteaga.com/api/about')
@@ -38,9 +38,13 @@ const index = ({
       />
       <Home siteTitle={data} />
       <About about={about} />
+      <Projects />
       <Experience experience={experience} />
       <Projects />
       <Skills skills={skills} />
+      {/* <BlogList /> */}
+      {/* <Work /> */}
+
       <Contact social={social} contact={contact} />
     </>
   )
