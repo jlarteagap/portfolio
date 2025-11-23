@@ -10,20 +10,20 @@ const Header = ({ siteTitle }) => {
   return (
     <div className={`header ${isScrolled ? 'scroll-header' : ''}`} id="header">
       <nav
-        className="navbar is-fixed-top nav is-flex-mobile is-justify-content-space-between ja__navbar"
+        className="fixed top-0 w-full z-50 flex justify-between ja__navbar p-4"
         role="navigation"
         aria-label="main navigation"
       >
-        <div className="navbar-brand">
-          <h1 className="navbar-item">{siteTitle}</h1>
+        <div className="flex items-center">
+          <h1 className="p-2 text-xl font-bold">{siteTitle}</h1>
         </div>
-        <div className="navbar-menu">
-          <div className="navbar-start">
+        <div className="hidden md:flex items-center w-full">
+          <div className="flex justify-start w-full">
             <Navbar />
           </div>
         </div>
-        <div className="navbar-end is-flex-mobile is-align-items-center">
-          <div className="navbar-item px-2">
+        <div className="flex items-center">
+          <div className="p-2 px-2">
             <DownloadButton />
           </div>
         </div>

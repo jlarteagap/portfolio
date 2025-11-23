@@ -3,10 +3,13 @@ import Image from 'next/image'
 
 export const ExperienceCard = ({ job }) => {
   return (
-    <div className="column card ja__card" key={job.name}>
-      <div className="media">
-        <div className="media-left">
-          <figure className="image is-48x48">
+    <div
+      className="w-full md:w-1/2 lg:w-1/3 bg-white shadow-md rounded-lg overflow-hidden border ja__card mb-6"
+      key={job.name}
+    >
+      <div className="flex items-center p-4">
+        <div className="mr-4">
+          <figure className="w-12 h-12">
             <Image
               width="48"
               height="48"
@@ -16,13 +19,13 @@ export const ExperienceCard = ({ job }) => {
             />
           </figure>
         </div>
-        <div className="media-content">
-          <p className="title ja__card-title is-4">{job.name}</p>
-          <p className="subtitle is-6">{job.web}</p>
+        <div className="flex-1">
+          <p className="text-xl font-bold ja__card-title">{job.name}</p>
+          <p className="text-sm text-gray-600">{job.web}</p>
         </div>
       </div>
-      <div className="card-content">
-        <div className="content">
+      <div className="p-4">
+        <div className="text-gray-700">
           <p>{job.description}</p>
         </div>
       </div>

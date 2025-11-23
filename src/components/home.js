@@ -6,29 +6,32 @@ import Image from 'next/image'
 const Home = ({ siteTitle }) => {
   return (
     <>
-      <section className="is-flex is-justify-content-center is-flex-direction-column is-align-items-center container home__section pb-6">
-        <figure className="image is-128x128">
+      <section className="flex justify-center flex-col items-center container mx-auto home__section pb-12">
+        <figure className="w-32 h-32">
           <Image
             src="/images/ja.webp"
-            className="is-rounded"
+            className="rounded-full"
             alt={siteTitle.name}
             width="400"
             height="300"
           />
         </figure>
-        <div className="has-text-centered">
-          <h2 className="mt-4 has-text-weight-bold is-size-1 is-uppercase">
+        <div className="text-center">
+          <h2 className="mt-4 font-bold text-5xl uppercase">
             {siteTitle.name}
           </h2>
           <p>{siteTitle.description}</p>
 
-          <h3 className="is-size-3 is-size-4-mobile my-6  p-2 has-text-weight-semibold home__phrase">
+          <h3 className="text-3xl max-sm:text-2xl my-12 p-2 font-semibold home__phrase">
             {siteTitle.slogan}
           </h3>
 
-          <div className="is-flex is-justify-content-center">
+          <div className="flex justify-center">
             <DownloadButton />
-            <a href="#contacto" className="mx-3 button ja__button-inverted">
+            <a
+              href="#contacto"
+              className="mx-3 px-4 py-2 rounded border border-current ja__button-inverted"
+            >
               Contacto
             </a>
           </div>

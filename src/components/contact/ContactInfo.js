@@ -1,34 +1,33 @@
 import React from 'react'
-import { BiRightArrowAlt, BiMailSend } from 'react-icons/bi'
-import { BsWhatsapp } from 'react-icons/bs'
+import { ArrowRight, Mail, MessageCircle } from 'lucide-react'
 
 export const ContactInfo = ({ contact }) => {
   return (
-    <div className="is-flex is-justify-content-space-around mt-6 contact__data">
-      <div className="is-flex is-flex-direction-column is-align-items-center">
-        <BiMailSend />
-        <h3 className="contact__card-title">Email</h3>
-        <span className="has-text-weight-bold">{contact.email}</span>
+    <div className="flex justify-around mt-12 contact__data flex-col md:flex-row gap-8">
+      <div className="flex flex-col items-center">
+        <Mail size={32} />
+        <h3 className="contact__card-title font-bold text-lg">Email</h3>
+        <span className="font-bold">{contact.email}</span>
         <a
           href={`mailto:${contact.email}`}
           target="_blank"
-          className="is-flex is-justify-content-center is-align-items-center"
+          className="flex justify-center items-center mt-2 hover:text-blue-500"
           rel="noreferrer"
         >
-          Escríbeme <BiRightArrowAlt />
+          Escríbeme <ArrowRight />
         </a>
       </div>
-      <div className="is-flex is-flex-direction-column is-align-items-center">
-        <BsWhatsapp />
-        <h3 className="contact__card-title">WhatsApp</h3>
-        <span className="has-text-weight-bold">+{contact.phone}</span>
+      <div className="flex flex-col items-center">
+        <MessageCircle size={32} />
+        <h3 className="contact__card-title font-bold text-lg">WhatsApp</h3>
+        <span className="font-bold">+{contact.phone}</span>
         <a
           href={`https://wa.me/${contact.phone}`}
           target="_blank"
-          className="is-flex is-justify-content-center is-align-items-center"
+          className="flex justify-center items-center mt-2 hover:text-green-500"
           rel="noreferrer"
         >
-          Escríbeme <BiRightArrowAlt />
+          Escríbeme <ArrowRight />
         </a>
       </div>
     </div>

@@ -5,11 +5,9 @@ import { ContactInfo } from './ContactInfo'
 
 const Contact = ({ social, contact }) => {
   return (
-    <section className="contact container py-6" id="contacto">
-      <div className="has-text-centered">
-        <h2 className="is-size-2 has-text-weight-bold is-size-4-mobile">
-          Contacta conmigo
-        </h2>
+    <section className="contact container mx-auto py-12" id="contacto">
+      <div className="text-center">
+        <h2 className="text-4xl font-bold max-sm:text-2xl">Contacta conmigo</h2>
       </div>
       <ContactInfo contact={contact} />
       <SocialMedia social={social} />

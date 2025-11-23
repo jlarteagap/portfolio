@@ -1,20 +1,20 @@
 import React from 'react'
-import { BiUser, BiBook, BiMessageSquare } from 'react-icons/bi'
+import { User, Book, MessageSquare } from 'lucide-react'
 
 export const Navbar = () => {
   return (
-    <div className="ml-6 is-flex">
-      <a href="#acerca-de-mi" className="nav__link navbar-item">
-        <BiUser />
+    <div className="ml-6 flex">
+      <a href="#acerca-de-mi" className="nav__link p-2 flex items-center">
+        <User />
         <span className="pl-3">Acerca de mi</span>
       </a>
 
-      <a href="#experiencia" className="nav__link navbar-item">
-        <BiBook /> <span className="pl-3">Experiencia</span>
+      <a href="#experiencia" className="nav__link p-2 flex items-center">
+        <Book /> <span className="pl-3">Experiencia</span>
       </a>
 
-      <a href="#contacto" className="nav__link navbar-item">
-        <BiMessageSquare /> <span className="pl-3">Contacto</span>
+      <a href="#contacto" className="nav__link p-2 flex items-center">
+        <MessageSquare /> <span className="pl-3">Contacto</span>
       </a>
     </div>
   )

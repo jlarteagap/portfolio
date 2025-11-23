@@ -1,8 +1,11 @@
 import React from 'react'
-import styles from './card.module.css'
 
 const Card = ({ children }: { children: React.ReactNode }) => {
-  return <div className={styles.card}>{children}</div>
+  return (
+    <div className="bg-white p-8 rounded-2xl shadow-lg transition-all duration-200 ease-in-out hover:scale-[1.01] hover:shadow-xl">
+      {children}
+    </div>
+  )
 }
 
 export default Card

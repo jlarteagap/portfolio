@@ -1,23 +1,20 @@
 import React from 'react'
-import { FaLinkedin, FaGithub, FaTwitter } from 'react-icons/fa'
+import { Linkedin, Github, Twitter } from 'lucide-react'
 
 const SocialMedia = ({ social }) => {
   const iconComponents = {
-    linkedin: <FaLinkedin size={24} />,
-    github: <FaGithub size={24} />,
-    twitter: <FaTwitter size={24} />
+    linkedin: <Linkedin size={24} />,
+    github: <Github size={24} />,
+    twitter: <Twitter size={24} />
   }
   return (
-    <div
-      className="is-flex mt-6 is-justify-content-center"
-      style={{ gap: '1rem' }}
-    >
+    <div className="flex mt-12 justify-center gap-4">
       {social.map(icon => {
         return (
           <div key={icon.name}>
             <a
               href={icon.url}
-              className="is-flex is-flex-direction-column is-align-items-center"
+              className="flex flex-col items-center hover:text-gray-600 transition-colors"
               target="_blank"
               rel="noreferrer"
             >

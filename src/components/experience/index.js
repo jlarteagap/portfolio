@@ -4,14 +4,14 @@ import { ExperienceCard } from './ExperienceCard'
 
 export const Experience = ({ experience }) => {
   return (
-    <section className="container py-6 px-3" id="experiencia">
-      <h2 className="is-size-1 my-6 has-text-weight-bold">Experiencia</h2>
-      <div className="columns is-desktop" style={{ gap: '1.5rem' }}>
+    <section className="container mx-auto py-12 px-4" id="experiencia">
+      <h2 className="text-5xl my-12 font-bold">Experiencia</h2>
+      <div className="flex flex-col lg:flex-row flex-wrap gap-6">
         {experience.map(job => {
           return <ExperienceCard key={job.name} job={job} />
         })}
       </div>
-      <div className="is-flex mt-6 is-flex-direction-column is-align-items-center">
+      <div className="flex mt-12 flex-col items-center">
         <p className="mb-4">Descargar el Curriculum completo...</p>
         <div>
           <DownloadButton />

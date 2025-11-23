@@ -1,20 +1,30 @@
-import React from 'react';
-import Image from 'next/image';
-import 'bulma/css/bulma.min.css';
+/* eslint-disable react/no-unknown-property */
+import React from 'react'
+import Image from 'next/image'
+import { Users, Award, TrendingUp, Calendar } from 'lucide-react'
 
 export default function DanzacruzCaseStudy() {
   const metrics = [
-    { label: 'Participantes', value: '45', icon: 'fa-users' },
-    { label: 'Coreografías', value: '50+', icon: 'fa-award' },
-    { label: 'Bailarines', value: '500+', icon: 'fa-users' },
-    { label: 'Reducción de tiempo', value: '58%', icon: 'fa-chart-line' },
-  ];
+    { label: 'Participantes', value: '45', icon: Users },
+    { label: 'Coreografías', value: '50+', icon: Award },
+    { label: 'Bailarines', value: '500+', icon: Users },
+    { label: 'Reducción de tiempo', value: '58%', icon: TrendingUp }
+  ]
 
   const techStack = [
-    'Next.js', 'React', 'TypeScript', 'TailwindCSS', 'Shadcn/UI',
-    'Firebase', 'Firestore', 'Auth', 'Storage', 'Yup', 'React Hook Form',
-    'Vercel', 
-  ];
+    'Next.js',
+    'React',
+    'TypeScript',
+    'TailwindCSS',
+    'Shadcn/UI',
+    'Firebase',
+    'Firestore',
+    'Auth',
+    'Storage',
+    'Yup',
+    'React Hook Form',
+    'Vercel'
+  ]
 
   const problems = [
     'Registro manual que consumía demasiado tiempo',
@@ -23,44 +33,48 @@ export default function DanzacruzCaseStudy() {
     'Reportes generados manualmente',
     'Desactivación manual del evento',
     'Código no utilizado acumulado'
-  ];
+  ]
 
   const solutions = [
     {
       title: 'Landing Page',
-      description: 'Diseño visual orientado a conversión con información clara y carga optimizada',
+      description:
+        'Diseño visual orientado a conversión con información clara y carga optimizada'
     },
     {
       title: 'Sistema de Registro',
-      description: 'Formulario rediseñado con validación robusta y subida automática de documentos',
+      description:
+        'Formulario rediseñado con validación robusta y subida automática de documentos'
     },
     {
       title: 'Panel Admin + Dashboard',
-      description: 'Gestión completa con filtros, búsqueda en tiempo real y métricas visuales',
+      description:
+        'Gestión completa con filtros, búsqueda en tiempo real y métricas visuales'
     },
     {
       title: 'Cierre Automático',
-      description: 'Desactivación automática del registro al finalizar el plazo',
+      description: 'Desactivación automática del registro al finalizar el plazo'
     },
     {
       title: 'Depuración del Código',
-      description: 'Eliminación de componentes no utilizados y preparación para reutilización',
+      description:
+        'Eliminación de componentes no utilizados y preparación para reutilización'
     }
-  ];
+  ]
 
   const results = [
     { metric: '100%', description: 'Registros centralizados' },
     { metric: '70%', description: 'Reducción de tareas manuales' },
     { metric: 'Segundos', description: 'Generación de reportes' },
     { metric: '58%', description: 'Mejora en tiempo de carga' }
-  ];
+  ]
 
   const learnings = [
     'La importancia de construir sistemas reutilizables año tras año',
     'Mantener la arquitectura lo más limpia y escalable posible',
     'Integrar validaciones desde el inicio para evitar errores posteriores',
     'Diseñar dashboards enfocados en información accionable'
-  ];
+  ]
 
   const nextSteps = [
     'Implementar pagos online (Stripe)',
@@ -68,7 +82,7 @@ export default function DanzacruzCaseStudy() {
     'Estados avanzados de revisión',
     'Credenciales imprimibles automáticas',
     'API interna para aplicaciones móviles'
-  ];
+  ]
 
   return (
     <>
@@ -76,7 +90,8 @@ export default function DanzacruzCaseStudy() {
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
         * {
-          font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', sans-serif;
+          font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Text',
+            'Helvetica Neue', sans-serif;
         }
 
         .case-study-container {
@@ -509,7 +524,7 @@ export default function DanzacruzCaseStudy() {
           .hero-title {
             font-size: 2.5rem;
           }
-          
+
           .hero-header {
             padding: 2.5rem;
           }
@@ -525,18 +540,19 @@ export default function DanzacruzCaseStudy() {
       `}</style>
 
       <div className="case-study-container">
-        <div className="container">
-          
+        <div className="container mx-auto px-4">
           {/* Hero Header */}
           <div className="hero-header">
-            <div className="is-flex is-align-items-flex-start" style={{ gap: '1.5rem' }}>
+            <div className="flex items-start gap-6">
               <div style={{ fontSize: '3.5rem' }}>🩰</div>
               <div>
                 <h1 className="hero-title">Plataforma Danzacruz 2025</h1>
-                <p className="hero-subtitle">Caso de Estudio — Desarrollador Full Stack</p>
+                <p className="hero-subtitle">
+                  Caso de Estudio — Desarrollador Full Stack
+                </p>
                 <div className="hero-meta">
-                  <span className="icon">
-                    <i className="fas fa-calendar"></i>
+                  <span className="flex items-center justify-center">
+                    <Calendar size={16} />
                   </span>
                   <span>Junio – Noviembre 2025</span>
                 </div>
@@ -545,25 +561,34 @@ export default function DanzacruzCaseStudy() {
           </div>
 
           {/* Resumen */}
-          <div className='is-relative p-5 m-auto' style={{ height: '600px', width: '70%'}}> 
-          <Image src="/images/projects/danzacruz-2025.jpg" alt="Danzacruz 2025" fill style={{objectFit: 'cover'}}/>
+          <div className="relative p-5 m-auto w-[70%] h-[600px]">
+            <Image
+              src="/images/projects/danzacruz-2025.jpg"
+              alt="Danzacruz 2025"
+              fill
+              style={{ objectFit: 'cover' }}
+            />
           </div>
 
           <div className="section-spacing">
             <h2 className="section-title">Resumen del Proyecto</h2>
             <p className="section-description">
-              Danzacruz es uno de los festivales de danza más grandes del país. El desafío del 2025 fue crear una plataforma moderna que permitiera registrar participantes y coreografías de manera simple, facilitar la gestión interna del evento y automatizar procesos que antes se hacían manualmente.
+              Danzacruz es uno de los festivales de danza más grandes del país.
+              El desafío del 2025 fue crear una plataforma moderna que
+              permitiera registrar participantes y coreografías de manera
+              simple, facilitar la gestión interna del evento y automatizar
+              procesos que antes se hacían manualmente.
             </p>
           </div>
 
           {/* Métricas */}
           <div className="section-spacing">
-            <div className="columns is-multiline">
+            <div className="flex flex-wrap -mx-4">
               {metrics.map((metric, index) => (
-                <div key={index} className="column is-3">
+                <div key={index} className="w-full md:w-1/4 px-4 mb-4">
                   <div className="metric-card">
                     <div className="metric-icon">
-                      <i className={`fas ${metric.icon}`}></i>
+                      <metric.icon size={24} />
                     </div>
                     <div className="metric-value">{metric.value}</div>
                     <div className="metric-label">{metric.label}</div>
@@ -574,14 +599,21 @@ export default function DanzacruzCaseStudy() {
           </div>
 
           {/* Tech Stack */}
-        <div className='is-relative p-5 m-auto' style={{ height: '600px', width: '70%'}}> 
-          <Image src="/images/projects/danzacruz-2025-1.jpg" alt="Danzacruz 2025" fill style={{objectFit: 'cover'}}/>
+          <div className="relative p-5 m-auto w-[70%] h-[600px]">
+            <Image
+              src="/images/projects/danzacruz-2025-1.jpg"
+              alt="Danzacruz 2025"
+              fill
+              style={{ objectFit: 'cover' }}
+            />
           </div>
           <div className="section-spacing">
             <h2 className="section-title">Tecnologías Utilizadas</h2>
             <div>
               {techStack.map((tech, index) => (
-                <span key={index} className="tech-tag">{tech}</span>
+                <span key={index} className="tech-tag">
+                  {tech}
+                </span>
               ))}
             </div>
           </div>
@@ -597,7 +629,9 @@ export default function DanzacruzCaseStudy() {
             ))}
             <div className="opportunity-box">
               <p>
-                <strong>Oportunidad:</strong> Crear un sistema más robusto, limpio y automatizado que sirva como base para todas las ediciones futuras.
+                <strong>Oportunidad:</strong> Crear un sistema más robusto,
+                limpio y automatizado que sirva como base para todas las
+                ediciones futuras.
               </p>
             </div>
           </div>
@@ -605,10 +639,12 @@ export default function DanzacruzCaseStudy() {
           {/* Objetivos */}
           <div className="section-spacing">
             <h2 className="section-title">Objetivos del Proyecto</h2>
-            <div className="columns">
-              <div className="column is-6">
+            <div className="flex flex-wrap -mx-4">
+              <div className="w-full md:w-1/2 px-4 mb-4">
                 <div className="objectives-box">
-                  <h3 className="title is-4 mb-4">Objetivos Funcionales</h3>
+                  <h3 className="font-bold text-xl mb-4">
+                    Objetivos Funcionales
+                  </h3>
                   <ul>
                     <li>Modernizar el registro</li>
                     <li>Panel con métricas y filtros</li>
@@ -618,9 +654,11 @@ export default function DanzacruzCaseStudy() {
                   </ul>
                 </div>
               </div>
-              <div className="column is-6">
+              <div className="w-full md:w-1/2 px-4 mb-4">
                 <div className="objectives-box inverted">
-                  <h3 className="title is-4 mb-4 has-text-white">Objetivos Técnicos</h3>
+                  <h3 className="font-bold text-xl mb-4 text-white">
+                    Objetivos Técnicos
+                  </h3>
                   <ul>
                     <li>Reestructurar y eliminar código muerto</li>
                     <li>Diseño UI/UX más profesional</li>
@@ -631,19 +669,26 @@ export default function DanzacruzCaseStudy() {
               </div>
             </div>
           </div>
-          <div className='is-relative p-5 m-auto' style={{ height: '600px', width: '70%'}}> 
-          <Image src="/images/projects/danzacruz-2025-2.jpg" alt="Danzacruz 2025" fill style={{objectFit: 'cover'}}/>
+          <div className="relative p-5 m-auto w-[70%] h-[600px]">
+            <Image
+              src="/images/projects/danzacruz-2025-2.jpg"
+              alt="Danzacruz 2025"
+              fill
+              style={{ objectFit: 'cover' }}
+            />
           </div>
           {/* La Solución */}
           <div className="section-spacing">
             <h2 className="section-title">La Solución</h2>
             {solutions.map((solution, index) => (
               <div key={index} className="solution-item">
-                <div className="is-flex" style={{ gap: '1.5rem', alignItems: 'flex-start' }}>
+                <div className="flex gap-6 items-start">
                   <div className="solution-number">{index + 1}</div>
                   <div>
                     <h3 className="solution-title">{solution.title}</h3>
-                    <p className="solution-description">{solution.description}</p>
+                    <p className="solution-description">
+                      {solution.description}
+                    </p>
                   </div>
                 </div>
               </div>
@@ -652,13 +697,15 @@ export default function DanzacruzCaseStudy() {
 
           {/* Resultados */}
           <div className="results-section">
-            <h2 className="section-title has-text-white">Resultados</h2>
-            <div className="columns is-mobile">
+            <h2 className="section-title text-white">Resultados</h2>
+            <div className="flex flex-wrap -mx-4">
               {results.map((result, index) => (
-                <div key={index} className="column">
+                <div key={index} className="w-full md:w-1/4 px-4 mb-4">
                   <div className="result-item">
                     <div className="result-metric">{result.metric}</div>
-                    <div className="result-description">{result.description}</div>
+                    <div className="result-description">
+                      {result.description}
+                    </div>
                   </div>
                 </div>
               ))}
@@ -678,9 +725,14 @@ export default function DanzacruzCaseStudy() {
           {/* Próximos Pasos */}
           <div className="section-spacing">
             <h2 className="section-title">Próximos Pasos (2026)</h2>
-            <div className="columns is-multiline">
+            <div className="flex flex-wrap -mx-4">
               {nextSteps.map((step, index) => (
-                <div key={index} className={`column ${index === 4 ? 'is-12' : 'is-6'}`}>
+                <div
+                  key={index}
+                  className={`w-full px-4 mb-4 ${
+                    index === 4 ? 'md:w-full' : 'md:w-1/2'
+                  }`}
+                >
                   <div className="next-step-item">
                     <div className="step-number">{index + 1}</div>
                     <p>{step}</p>
@@ -694,34 +746,36 @@ export default function DanzacruzCaseStudy() {
           <div className="section-spacing">
             <h2 className="section-title">Conclusión</h2>
             <p className="section-description content-spacing">
-              El proyecto Danzacruz 2025 representa una evolución completa respecto al sistema desarrollado en 2024. No solo moderniza el proceso de registro y gestión, sino que crea una base tecnológica sólida para todas las futuras ediciones del festival.
+              El proyecto Danzacruz 2025 representa una evolución completa
+              respecto al sistema desarrollado en 2024. No solo moderniza el
+              proceso de registro y gestión, sino que crea una base tecnológica
+              sólida para todas las futuras ediciones del festival.
             </p>
-            <div className="columns is-multiline">
-              <div className="column is-6">
+            <div className="flex flex-wrap -mx-4">
+              <div className="w-full md:w-1/2 px-4 mb-4">
                 <div className="conclusion-item">
                   <p>✓ Diseñar soluciones para eventos masivos</p>
                 </div>
               </div>
-              <div className="column is-6">
+              <div className="w-full md:w-1/2 px-4 mb-4">
                 <div className="conclusion-item">
                   <p>✓ Construir plataformas completas end-to-end</p>
                 </div>
               </div>
-              <div className="column is-6">
+              <div className="w-full md:w-1/2 px-4 mb-4">
                 <div className="conclusion-item">
                   <p>✓ Optimizar procesos y automatizar tareas</p>
                 </div>
               </div>
-              <div className="column is-6">
+              <div className="w-full md:w-1/2 px-4 mb-4">
                 <div className="conclusion-item">
                   <p>✓ Documentar proyectos para reutilización</p>
                 </div>
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </>
-  );
+  )
 }

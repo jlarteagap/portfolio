@@ -5,7 +5,7 @@ export const projects = [
     description:
       'Desarrollé una landing page para Danzacruz, con registro intuitivo, panel de administración y reportes en tiempo real.',
     image: '/images/projects/danzacruz.png',
-    stack: ['Next.js', 'React', 'Shadcn', 'Firebase', 'Tailwind'],
+    stack: ['Next.js', 'React', 'Shadcn', 'Firebase', 'Tailwind']
   },
   {
     id: 'danzacruz-2025',
@@ -23,6 +23,6 @@ export const projects = [
       'React Hook Form',
       'Formik',
       'TypeScript'
-    ],
-  },
+    ]
+  }
 ]
