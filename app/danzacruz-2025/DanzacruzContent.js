@@ -1,7 +1,10 @@
+"use client"
 /* eslint-disable react/no-unknown-property */
 import React from 'react'
 import Image from 'next/image'
 import { Users, Award, TrendingUp, Calendar } from 'lucide-react'
+
+
 
 export default function DanzacruzCaseStudy() {
   const metrics = [

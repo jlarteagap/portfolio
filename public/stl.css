@@ -1,6 +1,6 @@
 /*=============== GOOGLE FONTS ===============*/
-@import "tailwindcss";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import "tailwindcss";
 
 :root {
     --primary-color: rgba(255, 255, 255, 1);
@@ -32,6 +32,7 @@ a {
 
 .headings__titles {
     background: linear-gradient(93deg, var(--decorate-color) 0%, var(--primary-color) 100%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -40,7 +41,7 @@ a {
     width: 50%;
 }
 
-@media screen and(max-width: 480px) {
+@media screen and (max-width: 480px) {
     .home__section {
         margin-top: 3rem;
     }
