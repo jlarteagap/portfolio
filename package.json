@@ -28,6 +28,9 @@
     "typescript": "^5.9.3"
   },
   "license": "0BSD",
+  "engines": {
+    "node": ">=22.0.0"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
