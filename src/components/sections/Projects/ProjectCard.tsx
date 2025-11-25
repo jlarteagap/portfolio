@@ -1,6 +1,5 @@
 import React from 'react'
 import Card from '../../ui/Card/Card'
-import Image from 'next/image'
 import Tag from '../../ui/Tag'
 
 const ProjectCard = ({ project }) => {
@@ -9,11 +8,9 @@ const ProjectCard = ({ project }) => {
   return (
     <Card>
       <div className="mb-4">
-        <Image
+        <img
           src={image}
           alt={title}
-          width={800}
-          height={600}
           className="w-full h-auto rounded"
         />
       </div>

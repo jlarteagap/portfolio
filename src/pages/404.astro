@@ -1,0 +1,21 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Layout from '../components/layout.jsx';
+
+const pageTitle = '404 - Página no encontrada | Jorge Arteaga';
+const pageDescription = 'La página que buscas no existe';
+---
+
+<BaseLayout title={pageTitle} description={pageDescription}>
+  <Layout client:load>
+    <section class="min-h-screen flex items-center justify-center">
+      <div class="text-center">
+        <h1 class="text-6xl font-bold mb-4">404</h1>
+        <p class="text-xl mb-8">Página no encontrada</p>
+        <a href="/" class="text-lg underline hover:no-underline">
+          Volver al inicio
+        </a>
+      </div>
+    </section>
+  </Layout>
+</BaseLayout>

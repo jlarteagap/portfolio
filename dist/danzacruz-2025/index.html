@@ -1,0 +1,452 @@
+<!DOCTYPE html><html lang="es"> <head><meta charset="UTF-8"><meta name="description" content="Caso de Estudio — Desarrollador Full Stack para Danzacruz 2025"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta name="generator" content="Astro v5.16.0"><title>Plataforma Danzacruz 2025 | Case Study</title><link rel="stylesheet" href="/_astro/danzacruz-2025.BkYV48dT.css"></head> <body>  <style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).load=e;window.dispatchEvent(new Event("astro:load"));})();</script><script>(()=>{var A=Object.defineProperty;var g=(i,o,a)=>o in i?A(i,o,{enumerable:!0,configurable:!0,writable:!0,value:a}):i[o]=a;var d=(i,o,a)=>g(i,typeof o!="symbol"?o+"":o,a);{let i={0:t=>m(t),1:t=>a(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(a(t)),5:t=>new Set(a(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t),11:t=>1/0*t},o=t=>{let[l,e]=t;return l in i?i[l](e):void 0},a=t=>t.map(o),m=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([l,e])=>[l,o(e)]));class y extends HTMLElement{constructor(){super(...arguments);d(this,"Component");d(this,"hydrator");d(this,"hydrate",async()=>{var b;if(!this.hydrator||!this.isConnected)return;let e=(b=this.parentElement)==null?void 0:b.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let c=this.querySelectorAll("astro-slot"),n={},h=this.querySelectorAll("template[data-astro-template]");for(let r of h){let s=r.closest(this.tagName);s!=null&&s.isSameNode(this)&&(n[r.getAttribute("data-astro-template")||"default"]=r.innerHTML,r.remove())}for(let r of c){let s=r.closest(this.tagName);s!=null&&s.isSameNode(this)&&(n[r.getAttribute("name")||"default"]=r.innerHTML)}let p;try{p=this.hasAttribute("props")?m(JSON.parse(this.getAttribute("props"))):{}}catch(r){let s=this.getAttribute("component-url")||"<unknown>",v=this.getAttribute("component-export");throw v&&(s+=` (export ${v})`),console.error(`[hydrate] Error parsing props for component ${s}`,this.getAttribute("props"),r),r}let u;await this.hydrator(this)(this.Component,p,n,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});d(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),c.disconnect(),this.childrenConnectedCallback()},c=new MutationObserver(()=>{var n;((n=this.lastChild)==null?void 0:n.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});c.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}async start(){let e=JSON.parse(this.getAttribute("opts")),c=this.getAttribute("client");if(Astro[c]===void 0){window.addEventListener(`astro:${c}`,()=>this.start(),{once:!0});return}try{await Astro[c](async()=>{let n=this.getAttribute("renderer-url"),[h,{default:p}]=await Promise.all([import(this.getAttribute("component-url")),n?import(n):()=>()=>{}]),u=this.getAttribute("component-export")||"default";if(!u.includes("."))this.Component=h[u];else{this.Component=h;for(let f of u.split("."))this.Component=this.Component[f]}return this.hydrator=p,this.hydrate},e,this)}catch(n){console.error(`[astro-island] Error hydrating ${this.getAttribute("component-url")}`,n)}}attributeChangedCallback(){this.hydrate()}}d(y,"observedAttributes",["props"]),customElements.get("astro-island")||customElements.define("astro-island",y)}})();</script><astro-island uid="Z3QDY0" prefix="r3" component-url="/_astro/layout.luPlrBAh.js" component-export="default" renderer-url="/_astro/client.BLUn-lwI.js" props="{}" ssr client="load" opts="{&quot;name&quot;:&quot;Layout&quot;,&quot;value&quot;:true}" await-children><div class="header " id="header"><nav class="fixed top-0 w-full z-50 flex justify-between ja__navbar p-4" role="navigation" aria-label="main navigation"><div class="flex items-center"><h1 class="p-2 text-xl font-bold">Jorge Arteaga</h1></div><div class="hidden md:flex items-center w-full"><div class="flex justify-start w-full"><div class="ml-6 flex"><a href="#acerca-de-mi" class="nav__link p-2 flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user" aria-hidden="true"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg><span class="pl-3">Acerca de mi</span></a><a href="#experiencia" class="nav__link p-2 flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-book" aria-hidden="true"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"></path></svg> <span class="pl-3">Experiencia</span></a><a href="#contacto" class="nav__link p-2 flex items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-square" aria-hidden="true"><path d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"></path></svg> <span class="pl-3">Contacto</span></a></div></div></div><div class="flex items-center"><div class="p-2 px-2"><a download="" href="../assets/pdf/jorge-luis-arteaga-cv.pdf" class="px-4 py-2 rounded inline-flex items-center ja__buttons"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-download mr-2" aria-hidden="true"><path d="M12 15V3"></path><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><path d="m7 10 5 5 5-5"></path></svg><div><span class="hidden sm:inline mr-1">Download</span> CV</div></a></div></div></nav></div><main><astro-slot> <astro-island uid="2f1B5i" prefix="r1" component-url="/_astro/DanzacruzContent.BgUe4ym_.js" component-export="default" renderer-url="/_astro/client.BLUn-lwI.js" props="{}" ssr client="load" opts="{&quot;name&quot;:&quot;DanzacruzCaseStudy&quot;,&quot;value&quot;:true}" await-children><link rel="preload" as="image" href="/images/projects/danzacruz-2025.jpg"/><link rel="preload" as="image" href="/images/projects/danzacruz-2025-1.jpg"/><link rel="preload" as="image" href="/images/projects/danzacruz-2025-2.jpg"/><style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+        * {
+          font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Text',
+            'Helvetica Neue', sans-serif;
+        }
+
+        .case-study-container {
+          background: #fafafa;
+          min-height: 100vh;
+          padding: 4rem 0;
+        }
+
+        /* Hero Header */
+        .hero-header {
+          background: linear-gradient(135deg, #ffffff 0%, #f5f5f7 100%);
+          border-radius: 24px;
+          padding: 4rem;
+          margin-bottom: 3rem;
+          box-shadow: 0 4px 24px rgba(0, 0, 0, 0.04);
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .hero-header:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
+        }
+
+        .hero-title {
+          font-size: 3.5rem;
+          font-weight: 700;
+          letter-spacing: -0.02em;
+          color: #1d1d1f;
+          line-height: 1.1;
+          margin-bottom: 0.75rem;
+        }
+
+        .hero-subtitle {
+          font-size: 1.5rem;
+          font-weight: 400;
+          color: #6e6e73;
+          letter-spacing: -0.01em;
+        }
+
+        .hero-meta {
+          display: inline-flex;
+          align-items: center;
+          gap: 0.5rem;
+          padding: 0.5rem 1rem;
+          background: rgba(0, 0, 0, 0.03);
+          border-radius: 8px;
+          font-size: 0.95rem;
+          color: #6e6e73;
+          margin-top: 1.5rem;
+        }
+
+        /* Section Titles */
+        .section-title {
+          font-size: 2.25rem;
+          font-weight: 600;
+          letter-spacing: -0.015em;
+          color: #1d1d1f;
+          margin-bottom: 2rem;
+        }
+
+        .section-description {
+          font-size: 1.125rem;
+          line-height: 1.7;
+          color: #515154;
+          font-weight: 400;
+        }
+
+        /* Metric Cards */
+        .metric-card {
+          background: #ffffff;
+          border-radius: 16px;
+          padding: 2rem;
+          text-align: center;
+          transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+          box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+          border: 1px solid rgba(0, 0, 0, 0.06);
+          height: 100%;
+        }
+
+        .metric-card:hover {
+          transform: translateY(-4px);
+          box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+          border-color: #007aff;
+        }
+
+        .metric-icon {
+          width: 56px;
+          height: 56px;
+          background: linear-gradient(135deg, #007aff 0%, #0051d5 100%);
+          border-radius: 14px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 auto 1.25rem;
+          color: white;
+          font-size: 1.5rem;
+          transition: transform 0.3s ease;
+        }
+
+        .metric-card:hover .metric-icon {
+          transform: scale(1.05);
+        }
+
+        .metric-value {
+          font-size: 2.75rem;
+          font-weight: 700;
+          color: #1d1d1f;
+          letter-spacing: -0.02em;
+          margin-bottom: 0.5rem;
+        }
+
+        .metric-label {
+          font-size: 0.875rem;
+          font-weight: 500;
+          text-transform: uppercase;
+          letter-spacing: 0.08em;
+          color: #86868b;
+        }
+
+        /* Tech Stack */
+        .tech-tag {
+          display: inline-flex;
+          align-items: center;
+          padding: 0.625rem 1.125rem;
+          background: #ffffff;
+          border: 1px solid rgba(0, 0, 0, 0.1);
+          border-radius: 12px;
+          font-size: 0.875rem;
+          font-weight: 500;
+          color: #1d1d1f;
+          margin: 0.375rem;
+          transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+          box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+        }
+
+        .tech-tag:hover {
+          background: #007aff;
+          color: #ffffff;
+          border-color: #007aff;
+          transform: translateY(-2px);
+          box-shadow: 0 4px 12px rgba(0, 122, 255, 0.2);
+        }
+
+        /* Content Cards */
+        .content-card {
+          background: #ffffff;
+          border-radius: 16px;
+          padding: 2rem;
+          margin-bottom: 1.5rem;
+          box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+          border: 1px solid rgba(0, 0, 0, 0.06);
+          transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .content-card:hover {
+          box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+          transform: translateY(-2px);
+        }
+
+        /* Problem Items */
+        .problem-item {
+          display: flex;
+          align-items: flex-start;
+          gap: 1rem;
+          padding: 1.25rem;
+          background: #f5f5f7;
+          border-radius: 12px;
+          margin-bottom: 0.75rem;
+          border-left: 3px solid #007aff;
+          transition: all 0.2s ease;
+        }
+
+        .problem-item:hover {
+          background: #ebebed;
+          border-left-width: 4px;
+        }
+
+        .problem-number {
+          width: 28px;
+          height: 28px;
+          background: #007aff;
+          color: white;
+          border-radius: 8px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 0.875rem;
+          font-weight: 600;
+          flex-shrink: 0;
+        }
+
+        /* Opportunity Box */
+        .opportunity-box {
+          background: linear-gradient(135deg, #007aff 0%, #0051d5 100%);
+          color: white;
+          padding: 2rem;
+          border-radius: 16px;
+          margin-top: 2rem;
+          box-shadow: 0 8px 24px rgba(0, 122, 255, 0.2);
+        }
+
+        .opportunity-box p {
+          font-size: 1.125rem;
+          font-weight: 500;
+          line-height: 1.6;
+        }
+
+        /* Objectives Boxes */
+        .objectives-box {
+          background: #ffffff;
+          border-radius: 16px;
+          padding: 2.5rem;
+          height: 100%;
+          box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+          border: 1px solid rgba(0, 0, 0, 0.06);
+          transition: all 0.3s ease;
+        }
+
+        .objectives-box:hover {
+          box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+          transform: translateY(-2px);
+        }
+
+        .objectives-box.inverted {
+          background: linear-gradient(135deg, #1d1d1f 0%, #2d2d2f 100%);
+          color: #ffffff;
+        }
+
+        .objectives-box ul {
+          list-style: none;
+          padding: 0;
+        }
+
+        .objectives-box li {
+          padding: 0.875rem 0;
+          padding-left: 2rem;
+          position: relative;
+          font-size: 1rem;
+          line-height: 1.5;
+        }
+
+        .objectives-box li::before {
+          content: '✓';
+          position: absolute;
+          left: 0;
+          color: #007aff;
+          font-weight: 700;
+          font-size: 1.125rem;
+        }
+
+        .objectives-box.inverted li::before {
+          color: #0a84ff;
+        }
+
+        /* Solution Items */
+        .solution-item {
+          background: #ffffff;
+          border-radius: 16px;
+          padding: 2rem;
+          margin-bottom: 1rem;
+          box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+          border: 1px solid rgba(0, 0, 0, 0.06);
+          transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .solution-item:hover {
+          box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+          transform: translateY(-2px);
+          border-color: #007aff;
+        }
+
+        .solution-number {
+          width: 48px;
+          height: 48px;
+          background: linear-gradient(135deg, #007aff 0%, #0051d5 100%);
+          color: white;
+          border-radius: 12px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 1.25rem;
+          font-weight: 700;
+          flex-shrink: 0;
+        }
+
+        .solution-title {
+          font-size: 1.375rem;
+          font-weight: 600;
+          color: #1d1d1f;
+          margin-bottom: 0.5rem;
+          letter-spacing: -0.01em;
+        }
+
+        .solution-description {
+          font-size: 1rem;
+          color: #515154;
+          line-height: 1.6;
+        }
+
+        /* Results Section */
+        .results-section {
+          background: linear-gradient(135deg, #1d1d1f 0%, #2d2d2f 100%);
+          color: #ffffff;
+          padding: 4rem;
+          border-radius: 24px;
+          margin: 3rem 0;
+          box-shadow: 0 12px 48px rgba(0, 0, 0, 0.12);
+        }
+
+        .result-item {
+          text-align: center;
+          padding: 0 2rem;
+          border-right: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .result-item:last-child {
+          border-right: none;
+        }
+
+        .result-metric {
+          font-size: 3.5rem;
+          font-weight: 700;
+          margin-bottom: 0.75rem;
+          letter-spacing: -0.02em;
+          background: linear-gradient(135deg, #ffffff 0%, #b8b8b8 100%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+        }
+
+        .result-description {
+          font-size: 0.875rem;
+          text-transform: uppercase;
+          letter-spacing: 0.1em;
+          color: #86868b;
+          font-weight: 500;
+        }
+
+        /* Learning Items */
+        .learning-item {
+          background: #ffffff;
+          border-radius: 12px;
+          padding: 1.5rem;
+          margin-bottom: 1rem;
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+          border-left: 4px solid #007aff;
+          transition: all 0.2s ease;
+        }
+
+        .learning-item:hover {
+          box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+          transform: translateX(4px);
+        }
+
+        .learning-item p {
+          font-size: 1rem;
+          color: #1d1d1f;
+          line-height: 1.6;
+          margin: 0;
+        }
+
+        /* Next Steps */
+        .next-step-item {
+          background: #ffffff;
+          border-radius: 12px;
+          padding: 1.5rem;
+          height: 100%;
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+          border: 1px solid rgba(0, 0, 0, 0.06);
+          transition: all 0.3s ease;
+          display: flex;
+          align-items: flex-start;
+          gap: 1rem;
+        }
+
+        .next-step-item:hover {
+          box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+          transform: translateY(-2px);
+          border-color: #007aff;
+        }
+
+        .step-number {
+          width: 40px;
+          height: 40px;
+          background: linear-gradient(135deg, #007aff 0%, #0051d5 100%);
+          color: white;
+          border-radius: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: 700;
+          flex-shrink: 0;
+          font-size: 1.125rem;
+        }
+
+        /* Conclusion Items */
+        .conclusion-item {
+          background: #ffffff;
+          border-radius: 12px;
+          padding: 1.5rem;
+          height: 100%;
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+          border: 1px solid rgba(0, 0, 0, 0.06);
+          transition: all 0.3s ease;
+        }
+
+        .conclusion-item:hover {
+          box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+          transform: translateY(-2px);
+        }
+
+        .conclusion-item p {
+          font-size: 1rem;
+          font-weight: 500;
+          color: #1d1d1f;
+          margin: 0;
+        }
+
+        /* Spacing */
+        .section-spacing {
+          margin-bottom: 5rem;
+        }
+
+        .content-spacing {
+          margin-bottom: 3rem;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+          .hero-title {
+            font-size: 2.5rem;
+          }
+
+          .hero-header {
+            padding: 2.5rem;
+          }
+
+          .section-title {
+            font-size: 1.875rem;
+          }
+
+          .result-metric {
+            font-size: 2.5rem;
+          }
+        }
+      </style><div class="case-study-container"><div class="container mx-auto px-4"><div class="hero-header"><div class="flex items-start gap-6"><div style="font-size:3.5rem">🩰</div><div><h1 class="hero-title">Plataforma Danzacruz 2025</h1><p class="hero-subtitle">Caso de Estudio — Desarrollador Full Stack</p><div class="hero-meta"><span class="flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar" aria-hidden="true"><path d="M8 2v4"></path><path d="M16 2v4"></path><rect width="18" height="18" x="3" y="4" rx="2"></rect><path d="M3 10h18"></path></svg></span><span>Junio – Noviembre 2025</span></div></div></div></div><div class="relative p-5 m-auto w-[70%] h-[600px]"><img src="/images/projects/danzacruz-2025.jpg" alt="Danzacruz 2025" style="width:100%;height:100%;object-fit:cover"/></div><div class="section-spacing"><h2 class="section-title">Resumen del Proyecto</h2><p class="section-description">Danzacruz es uno de los festivales de danza más grandes del país. El desafío del 2025 fue crear una plataforma moderna que permitiera registrar participantes y coreografías de manera simple, facilitar la gestión interna del evento y automatizar procesos que antes se hacían manualmente.</p></div><div class="section-spacing"><div class="flex flex-wrap -mx-4"><div class="w-full md:w-1/4 px-4 mb-4"><div class="metric-card"><div class="metric-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><path d="M16 3.128a4 4 0 0 1 0 7.744"></path><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><circle cx="9" cy="7" r="4"></circle></svg></div><div class="metric-value">45</div><div class="metric-label">Participantes</div></div></div><div class="w-full md:w-1/4 px-4 mb-4"><div class="metric-card"><div class="metric-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-award" aria-hidden="true"><path d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"></path><circle cx="12" cy="8" r="6"></circle></svg></div><div class="metric-value">50+</div><div class="metric-label">Coreografías</div></div></div><div class="w-full md:w-1/4 px-4 mb-4"><div class="metric-card"><div class="metric-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><path d="M16 3.128a4 4 0 0 1 0 7.744"></path><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><circle cx="9" cy="7" r="4"></circle></svg></div><div class="metric-value">500+</div><div class="metric-label">Bailarines</div></div></div><div class="w-full md:w-1/4 px-4 mb-4"><div class="metric-card"><div class="metric-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-up" aria-hidden="true"><path d="M16 7h6v6"></path><path d="m22 7-8.5 8.5-5-5L2 17"></path></svg></div><div class="metric-value">58%</div><div class="metric-label">Reducción de tiempo</div></div></div></div></div><div class="relative p-5 m-auto w-[70%] h-[600px]"><img src="/images/projects/danzacruz-2025-1.jpg" alt="Danzacruz 2025" style="width:100%;height:100%;object-fit:cover"/></div><div class="section-spacing"><h2 class="section-title">Tecnologías Utilizadas</h2><div><span class="tech-tag">Next.js</span><span class="tech-tag">React</span><span class="tech-tag">TypeScript</span><span class="tech-tag">TailwindCSS</span><span class="tech-tag">Shadcn/UI</span><span class="tech-tag">Firebase</span><span class="tech-tag">Firestore</span><span class="tech-tag">Auth</span><span class="tech-tag">Storage</span><span class="tech-tag">Yup</span><span class="tech-tag">React Hook Form</span><span class="tech-tag">Vercel</span></div></div><div class="section-spacing"><h2 class="section-title">El Problema</h2><div class="problem-item"><div class="problem-number">1</div><p>Registro manual que consumía demasiado tiempo</p></div><div class="problem-item"><div class="problem-number">2</div><p>Datos no centralizados</p></div><div class="problem-item"><div class="problem-number">3</div><p>Panel administrativo limitado (2024)</p></div><div class="problem-item"><div class="problem-number">4</div><p>Reportes generados manualmente</p></div><div class="problem-item"><div class="problem-number">5</div><p>Desactivación manual del evento</p></div><div class="problem-item"><div class="problem-number">6</div><p>Código no utilizado acumulado</p></div><div class="opportunity-box"><p><strong>Oportunidad:</strong> Crear un sistema más robusto, limpio y automatizado que sirva como base para todas las ediciones futuras.</p></div></div><div class="section-spacing"><h2 class="section-title">Objetivos del Proyecto</h2><div class="flex flex-wrap -mx-4"><div class="w-full md:w-1/2 px-4 mb-4"><div class="objectives-box"><h3 class="font-bold text-xl mb-4">Objetivos Funcionales</h3><ul><li>Modernizar el registro</li><li>Panel con métricas y filtros</li><li>Reportes automáticos en tiempo real</li><li>Sistema de cierre automático</li><li>Preparar para reutilización anual</li></ul></div></div><div class="w-full md:w-1/2 px-4 mb-4"><div class="objectives-box inverted"><h3 class="font-bold text-xl mb-4 text-white">Objetivos Técnicos</h3><ul><li>Reestructurar y eliminar código muerto</li><li>Diseño UI/UX más profesional</li><li>Optimizar base de datos y rendimiento</li><li>Arquitectura escalable</li></ul></div></div></div></div><div class="relative p-5 m-auto w-[70%] h-[600px]"><img src="/images/projects/danzacruz-2025-2.jpg" alt="Danzacruz 2025" style="width:100%;height:100%;object-fit:cover"/></div><div class="section-spacing"><h2 class="section-title">La Solución</h2><div class="solution-item"><div class="flex gap-6 items-start"><div class="solution-number">1</div><div><h3 class="solution-title">Landing Page</h3><p class="solution-description">Diseño visual orientado a conversión con información clara y carga optimizada</p></div></div></div><div class="solution-item"><div class="flex gap-6 items-start"><div class="solution-number">2</div><div><h3 class="solution-title">Sistema de Registro</h3><p class="solution-description">Formulario rediseñado con validación robusta y subida automática de documentos</p></div></div></div><div class="solution-item"><div class="flex gap-6 items-start"><div class="solution-number">3</div><div><h3 class="solution-title">Panel Admin + Dashboard</h3><p class="solution-description">Gestión completa con filtros, búsqueda en tiempo real y métricas visuales</p></div></div></div><div class="solution-item"><div class="flex gap-6 items-start"><div class="solution-number">4</div><div><h3 class="solution-title">Cierre Automático</h3><p class="solution-description">Desactivación automática del registro al finalizar el plazo</p></div></div></div><div class="solution-item"><div class="flex gap-6 items-start"><div class="solution-number">5</div><div><h3 class="solution-title">Depuración del Código</h3><p class="solution-description">Eliminación de componentes no utilizados y preparación para reutilización</p></div></div></div></div><div class="results-section"><h2 class="section-title text-white">Resultados</h2><div class="flex flex-wrap -mx-4"><div class="w-full md:w-1/4 px-4 mb-4"><div class="result-item"><div class="result-metric">100%</div><div class="result-description">Registros centralizados</div></div></div><div class="w-full md:w-1/4 px-4 mb-4"><div class="result-item"><div class="result-metric">70%</div><div class="result-description">Reducción de tareas manuales</div></div></div><div class="w-full md:w-1/4 px-4 mb-4"><div class="result-item"><div class="result-metric">Segundos</div><div class="result-description">Generación de reportes</div></div></div><div class="w-full md:w-1/4 px-4 mb-4"><div class="result-item"><div class="result-metric">58%</div><div class="result-description">Mejora en tiempo de carga</div></div></div></div></div><div class="section-spacing"><h2 class="section-title">Aprendizajes Clave</h2><div class="learning-item"><p>La importancia de construir sistemas reutilizables año tras año</p></div><div class="learning-item"><p>Mantener la arquitectura lo más limpia y escalable posible</p></div><div class="learning-item"><p>Integrar validaciones desde el inicio para evitar errores posteriores</p></div><div class="learning-item"><p>Diseñar dashboards enfocados en información accionable</p></div></div><div class="section-spacing"><h2 class="section-title">Próximos Pasos (2026)</h2><div class="flex flex-wrap -mx-4"><div class="w-full px-4 mb-4 md:w-1/2"><div class="next-step-item"><div class="step-number">1</div><p>Implementar pagos online (Stripe)</p></div></div><div class="w-full px-4 mb-4 md:w-1/2"><div class="next-step-item"><div class="step-number">2</div><p>Módulo de acreditaciones para el evento</p></div></div><div class="w-full px-4 mb-4 md:w-1/2"><div class="next-step-item"><div class="step-number">3</div><p>Estados avanzados de revisión</p></div></div><div class="w-full px-4 mb-4 md:w-1/2"><div class="next-step-item"><div class="step-number">4</div><p>Credenciales imprimibles automáticas</p></div></div><div class="w-full px-4 mb-4 md:w-full"><div class="next-step-item"><div class="step-number">5</div><p>API interna para aplicaciones móviles</p></div></div></div></div><div class="section-spacing"><h2 class="section-title">Conclusión</h2><p class="section-description content-spacing">El proyecto Danzacruz 2025 representa una evolución completa respecto al sistema desarrollado en 2024. No solo moderniza el proceso de registro y gestión, sino que crea una base tecnológica sólida para todas las futuras ediciones del festival.</p><div class="flex flex-wrap -mx-4"><div class="w-full md:w-1/2 px-4 mb-4"><div class="conclusion-item"><p>✓ Diseñar soluciones para eventos masivos</p></div></div><div class="w-full md:w-1/2 px-4 mb-4"><div class="conclusion-item"><p>✓ Construir plataformas completas end-to-end</p></div></div><div class="w-full md:w-1/2 px-4 mb-4"><div class="conclusion-item"><p>✓ Optimizar procesos y automatizar tareas</p></div></div><div class="w-full md:w-1/2 px-4 mb-4"><div class="conclusion-item"><p>✓ Documentar proyectos para reutilización</p></div></div></div></div></div></div><!--astro:end--></astro-island> </astro-slot></main><!--astro:end--></astro-island>  </body></html>

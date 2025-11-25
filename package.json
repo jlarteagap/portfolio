@@ -1,30 +1,34 @@
 {
   "name": "jorge-arteaga-portfolio",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.2.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "description": "Portfolio personal de Jorge Luis Arteaga - Frontend Developer",
+  "version": "0.3.0",
+  "author": "Jorge Luis Arteaga <jorgelarteagap@gmail.com>",
+  "type": "module",
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "animate.css": "^4.1.1",
-    "eslint-config-next": "^16.0.3",
+    "astro": "^5.16.0",
     "lucide-react": "^0.554.0",
-    "next": "^16.0.3",
     "prop-types": "^15.8.1",
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4.1.17",
+    "@astrojs/check": "^0.9.4",
+    "@astrojs/react": "^4.0.0",
+    "@astrojs/tailwind": "^5.1.2",
     "@types/node": "^24.10.1",
     "@types/react": "^19.2.6",
+    "@types/react-dom": "^19.0.2",
     "autoprefixer": "^10.4.22",
     "eslint": "^8.57.1",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.4",
     "postcss": "^8.5.6",
     "prettier": "^3.6.2",
-    "tailwindcss": "^4.1.17",
+    "prettier-plugin-astro": "^0.14.1",
+    "tailwindcss": "^3.4.17",
     "typescript": "^5.9.3"
   },
   "license": "0BSD",
@@ -32,9 +36,10 @@
     "node": ">=22.0.0"
   },
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "check": "astro check"
   }
 }
