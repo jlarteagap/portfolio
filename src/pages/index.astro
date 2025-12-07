@@ -1,10 +1,10 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Layout from '../components/layout.jsx';
-import Home from '../components/home.jsx';
-import About from '../components/about/about.jsx';
-import Skills from '../components/skills.jsx';
-import Contact from '../components/contact/contact.jsx';
+import Home from '../components/home';
+import About from '../components/about/about';
+import Skills from '../components/skills';
+import Contact from '../components/contact/contact';
 import { Experience } from '../components/experience';
 import ProjectsSection from '../components/sections/Projects/ProjectsSection';
 import { aboutData } from '../data/about';
@@ -16,7 +16,7 @@ const pageDescription = aboutData.data.description;
 ---
 
 <BaseLayout title={pageTitle} description={pageDescription}>
-  <Layout client:load>
+  <Layout headerType="developer" client:load>
     <Home siteTitle={data} client:load />
     <About about={about} client:visible />
     <Experience experience={experience} client:visible />

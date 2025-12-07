@@ -6,7 +6,7 @@ export const Experience = ({ experience }) => {
   return (
     <section className="container mx-auto py-12 px-4" id="experiencia">
       <h2 className="text-5xl my-12 font-bold">Experiencia</h2>
-      <div className="flex flex-col lg:flex-row flex-wrap gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {experience.map(job => {
           return <ExperienceCard key={job.name} job={job} />
         })}

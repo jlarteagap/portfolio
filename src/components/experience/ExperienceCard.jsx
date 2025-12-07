@@ -3,7 +3,7 @@ import React from 'react'
 export const ExperienceCard = ({ job }) => {
   return (
     <div
-      className="w-full md:w-1/2 lg:w-1/3 bg-white shadow-md rounded-lg overflow-hidden border ja__card mb-6"
+      className="bg-white shadow-md rounded-lg overflow-hidden border"
       key={job.name}
     >
       <div className="flex items-center p-4">

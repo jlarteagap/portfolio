@@ -23,6 +23,7 @@ export const projects = [
       'React Hook Form',
       'Formik',
       'TypeScript'
-    ]
+    ],
+    link: '/danzacruz-2025'
   }
 ]

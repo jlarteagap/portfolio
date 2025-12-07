@@ -5,7 +5,7 @@ import { DownloadButton } from './Utils/utils'
 const Home = ({ siteTitle }) => {
   return (
     <>
-      <section className="flex justify-center flex-col items-center container mx-auto home__section pb-12">
+      <section className="flex justify-center flex-col items-center container mx-auto pb-12">
         <figure className="w-32 h-32">
           <img
             src="/images/ja.webp"
@@ -20,7 +20,7 @@ const Home = ({ siteTitle }) => {
           </h2>
           <p>{siteTitle.description}</p>
 
-          <h3 className="text-3xl max-sm:text-2xl my-12 p-2 font-semibold home__phrase">
+          <h3 className="text-3xl max-sm:text-2xl my-12 p-2 font-semibold">
             {siteTitle.slogan}
           </h3>
 
@@ -28,7 +28,7 @@ const Home = ({ siteTitle }) => {
             <DownloadButton />
             <a
               href="#contacto"
-              className="mx-3 px-4 py-2 rounded border border-current ja__button-inverted"
+              className="mx-3 px-4 py-2 rounded border border-slate-200 text-slate-200 hover:text-slate-500 hover:border-slate-500 transition-colors"
             >
               Contacto
             </a>
