@@ -2,7 +2,7 @@
   "name": "jorge-arteaga-portfolio",
   "private": true,
   "description": "Portfolio personal de Jorge Luis Arteaga - Frontend Developer",
-  "version": "0.3.0",
+  "version": "2.0.0",
   "author": "Jorge Luis Arteaga <jorgelarteagap@gmail.com>",
   "type": "module",
   "dependencies": {
