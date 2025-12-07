@@ -1,0 +1,14 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Layout from '../components/layout.jsx';
+import DanzacruzCaseStudy from '../components/DanzacruzContent.jsx';
+
+const pageTitle = 'Plataforma Danzacruz 2025 | Case Study';
+const pageDescription = 'Caso de Estudio — Desarrollador Full Stack para Danzacruz 2025';
+---
+
+<BaseLayout title={pageTitle} description={pageDescription}>
+  <Layout client:load>
+    <DanzacruzCaseStudy client:load />
+  </Layout>
+</BaseLayout>

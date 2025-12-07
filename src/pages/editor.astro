@@ -1,0 +1,23 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Layout from '../components/layout.jsx';
+import About from '../components/editor/about';
+import Contact from '../components/editor/contact';
+import Hero from '../components/editor/hero';
+import Services from '../components/editor/services';
+import Results from '../components/editor/results';
+import Workflow from '../components/editor/workflows';
+const pageTitle = 'Jorge Arteaga | editor Portfolio';
+const pageDescription = 'Portfolio de Jorge Arteaga';
+---
+
+<BaseLayout title={pageTitle} description={pageDescription}>
+  <Layout headerType="editor" client:load>
+    <Hero client:load />
+    <About client:load />
+    <Services client:load />
+    <Workflow client:load />
+    <Results client:load />
+    <Contact client:load />
+  </Layout>
+</BaseLayout>

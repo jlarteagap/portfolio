@@ -1,0 +1,94 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import "tailwindcss";
+
+:root {
+    --primary-color: rgba(255, 255, 255, 1);
+    --secondary-color: rgba(0, 0, 0, 1);
+    --text-color: rgb(146, 146, 146);
+    --decorate-color: rgb(52, 52, 52);
+}
+
+a {
+    color: var(--decorate-color);
+}
+
+.ja__navbar {
+    background-color: var(--primary-color);
+}
+
+.nav__link {
+    background: transparent !important;
+}
+
+.home__section {
+    margin-top: 10rem;
+}
+
+.home__phrase {
+    max-width: 50rem;
+    line-height: .85;
+}
+
+.headings__titles {
+    background: linear-gradient(93deg, var(--decorate-color) 0%, var(--primary-color) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-data {
+    width: 50%;
+}
+
+@media screen and (max-width: 480px) {
+    .home__section {
+        margin-top: 3rem;
+    }
+}
+
+.about__container {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 1rem;
+}
+
+.skills__title {
+    font-size: 10rem;
+}
+
+.outlinetext {
+    color: var(--secondary-color);
+    text-shadow: -1px 1px 0 var(--primary-color),
+        1px 1px 0 var(--primary-color),
+        1px -1px 0 var(--primary-color),
+        -1px -1px 0 var(--primary-color);
+}
+
+.about__text {
+    width: 50%;
+}
+
+@media screen and (max-width: 480px) {
+    .contact__data {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .about-data {
+        width: 80%;
+    }
+
+    .skills__title {
+        font-size: 4rem;
+    }
+
+    .about__text {
+        width: 100%;
+    }
+
+    .about__container__column {
+        flex-direction: column;
+
+    }
+}
